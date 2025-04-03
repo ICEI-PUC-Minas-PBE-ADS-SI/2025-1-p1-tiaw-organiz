@@ -1,6 +1,6 @@
 # Nome do projeto
 
-`CURSO: Analise E Desenvolvimento De Sistemas
+`CURSO: Analise e Desenvolvimento De Sistemas
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
 
