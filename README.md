@@ -1,6 +1,6 @@
 # Nome do projeto
 
-`CURSO: Coloque o nome do curso aqui, sem abreviações`
+`CURSO: Analise E Desenvolvimento De Sistemas
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
 
