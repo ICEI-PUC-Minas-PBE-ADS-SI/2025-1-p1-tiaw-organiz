@@ -6,7 +6,7 @@
 
 `Xº semestre/ANO`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+O nosso projeto foi desenvolvido para auxiliar indivíduos que têm dificuldades em gerenciar seus compromissos. O software oferece ao usuário a possibilidade de registrar os dias em que estará ocupado com suas tarefas, sejam elas relacionadas à casa, ao trabalho ou até mesmo lembretes financeiros.
 
 ## Integrantes
 
