@@ -19,7 +19,10 @@ Ao fazer login, o usuário é direcionado para o Dashboard, onde pode visualizar
 
 O usuário pode acessar a tela de Tarefas para visualizar, criar, editar ou excluir tarefas.
 
+
+
 ![OrganiZ](https://github.com/user-attachments/assets/1230d5b6-5175-4db9-86d2-80011f72f6cf)
+
 
 ## Wireframes
 
