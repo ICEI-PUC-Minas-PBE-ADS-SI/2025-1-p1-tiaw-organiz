@@ -8,23 +8,16 @@ A justificativa para o desenvolvimento do *OrganiZ* está na crescente demanda p
 O público-alvo do *OrganiZ* é amplo: qualquer pessoa que busca uma vida mais organizada pode se beneficiar da ferramenta. Porém, é **imprescindível** para estudantes, profissionais de empresas, professores e qualquer pessoa que lide com múltiplas tare3fas diariamente. Sendo assim uma solução prática e eficiente para todos que desejam tomar o controle de sua rotina e aumanetar sua produtividade. 
 
 ## Problema
-Com a sobregarga de informações a que somos expostos, principalmete das redes sociais, mensagens instantâneas, reuniões e obrigações, manter uma rotina organizada se torna um desafio constante. Essa desorganização não apenas afeta a **produtividade**, como também gera estresse, ansiedade e a sensação de estar sempre esquecendo de algo importante.
+Com a sobregarga de informações a que somos expostos, principalmete das redes sociais, mensagens instantâneas, reuniões e obrigações, manter uma rotina organizada se torna um desafio constante. Essa desorganização não apenas afeta a **produtividade**, como também gera estresse, ansiedade e a sensação de estar sempre esquecendo de algo importante. Muitas pessoas relatam dificuldades em manter o foco, estabelecer prioridades, lembrar de compromissos importantes, ter uma boa organização financeira e manter o controle sobre suas metas. Isso é ainda mais gritante em ambientes acadêmicos e corporativos, onde múltiplas tarefas coexistem em prazos curtos e com alta exigência por desempenho. Por este lado, a ausência de um método eficaz para organização pode comprometer o trabalho, equilíbrio emocional, financeiro e relacionamento entre pessoas.
 
-Muitas pessoas relatam dificuldades em manter o foco, estabelecer prioridades, lembrar de compromissos importantes, ter uma boa organização financeira e manter o controle sobre suas metas. Isso é ainda mais gritante em ambientes acadêmicos e corporativos, onde múltiplas tarefas coexistem em prazos curtos e com alta exigência por desempenho. Por este lado, a ausência de um método eficaz para organização pode comprometer o trabalho, equilíbrio emocional, financeiro e relacionamento entre pessoas.
-
-A necessidade de algo que centralize lembretes, anotações e planejamentos de tarefas surge como resposta direta a essa realidade. Pessoas frequentemente buscam blocos de notas físicos, aplicativos genéricos, planilhas, ou simplesmente tentam lembrar pela memória, métodos que de forma isolada são inconsistentes a longo prazo. Onde muitas dessas soluções carecem de uma interface aacessível e organizada, o que afasta usuários com pouca familiaridade com tecnologia ou com rotinas já sobrecarregadas.
-
-O *OrganiZ* surge como resposta a esse cenário, com o porpósito de auxiliar na construção de uma rotina mais clara, objetiva e gerenciável. Sendo utilizado em diversos contextos, desde estudantes que precisam equilibrar dias de provas, estudos e trabalhos, até profissionais que precisam acompanhar reuniões, prazos e tarfaz do dia a dia. Porém, não se resuma apenas a ambientes acadêmicos e de trabalho, trata-se de uma ferramenta voltada para a vida cotidiana, para pessoas que buscam maior clareza e tranquilidade.
-
-Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
+A necessidade de algo que centralize lembretes, anotações e planejamentos de tarefas surge como resposta direta a essa realidade. Pessoas frequentemente buscam blocos de notas físicos, aplicativos genéricos, planilhas, ou simplesmente tentam lembrar pela memória, métodos que de forma isolada são inconsistentes a longo prazo. Onde muitas dessas soluções carecem de uma interface aacessível e organizada, o que afasta usuários com pouca familiaridade com tecnologia ou com rotinas já sobrecarregadas. O *OrganiZ* surge como resposta a esse cenário, com o porpósito de auxiliar na construção de uma rotina mais clara, objetiva e gerenciável. Sendo utilizado em diversos contextos, desde estudantes que precisam equilibrar dias de provas, estudos e trabalhos, até profissionais que precisam acompanhar reuniões, prazos e tarfaz do dia a dia. Porém, não se resuma apenas a ambientes acadêmicos e de trabalho, trata-se de uma ferramenta voltada para a vida cotidiana, para pessoas que buscam maior clareza e tranquilidade.
 
 ## Objetivos
-Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
+O objetivo deste projeto é **desenvolver um software de organização pessoal**, que auxilie os usuários na gestão de suas rotinas, oferecendo uma solução prática, intuitiva e centralizada para o acompanhamento de tarefas, compromissos e notas importantes. O projeto visa atender às necessidades dos usuários que enfrentam dificuldades para se organizar diante à sobre carga de informações e à constante pressão por produtividade.
 
-Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
- 
-> **Links úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+ 1. Compreender as principais dificuldades enfrentadas por diferentes perfis de usuários
+ 2. Projetar uma interface intuitiva e acessível
+ 3. Integrar funcionalidades como criação de lembretes, notar, alarmes e categorizar por pastas perzonalizadas.
 
 ## Justificativa
 
