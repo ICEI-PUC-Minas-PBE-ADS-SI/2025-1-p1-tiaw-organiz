@@ -24,8 +24,11 @@
 **✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
 
 **Personas**
+
 ![image](https://github.com/user-attachments/assets/07748abf-fc90-4751-8608-c5ac3fe28eaa)
+
 ![image](https://github.com/user-attachments/assets/ccd937ca-68ed-4d6f-85e8-4c132b1f64a5)
+
 ![image](https://github.com/user-attachments/assets/78fbb5cb-5ca4-4990-9658-be799b77d2d0)
 
 
