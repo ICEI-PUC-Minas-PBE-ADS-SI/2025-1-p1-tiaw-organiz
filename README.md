@@ -51,7 +51,8 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Apresentação
 
-* <a href="presentation/README.md">[Uploading trabalho amalia 1.pdf…]()</a>
+* [trabalho amalia 1.pdf](https://github.com/user-attachments/files/19623521/trabalho.amalia.1.pdf)
+
 
 ## Dicas 
 
