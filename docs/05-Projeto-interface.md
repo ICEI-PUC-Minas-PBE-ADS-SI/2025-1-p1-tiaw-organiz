@@ -9,21 +9,23 @@
 
  ## User flow
 
+O fluxo de navegação mapeia as principais etapas de interação que o usuário realiza dentro do sistema.
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+Aqui está um resumo das interações típicas:
 
-Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapear todo o fluxo de navegação do usuário na aplicação. Essa técnica serve para alinhar os caminhos e as possíveis ações que o usuário pode realizar junto com os membros da equipe.
+Tela de Login:
+
+O usuário insere seu e-mail e senha para acessar sua conta. Caso não tenha uma conta, pode se registrar rapidamente.
+
+Tela Principal/Dashboard:
+
+Ao fazer login, o usuário é direcionado para o Dashboard, onde pode visualizar suas tarefas e eventos.
+
+Tela de Tarefas:
+
+O usuário pode acessar a tela de Tarefas para visualizar, criar, editar ou excluir tarefas.
 
 ![OrganiZ](https://github.com/user-attachments/assets/1230d5b6-5175-4db9-86d2-80011f72f6cf)
-
-
-
-
-> **Links úteis**:
-> - [User flow: o quê é e como fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User flow vs site maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 user flow tools & templates for smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
 
 ## Wireframes
 
