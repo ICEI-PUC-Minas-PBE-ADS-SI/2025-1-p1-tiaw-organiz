@@ -16,7 +16,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |--------------------|------------------------------------|----------------------------------------|
 |Como uma pessoa desorganizada  | Quero um aplicativo que categorize automaticamente minhas tarefas | Para que eu possa priorizá-las sem esforço      |
 |Como alguém que perde prazos de pagamento       | Quero um sistema que agrupe e me avise sobre contas a vencer  | Para evitar juros e multas  |
-|Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
+|Como alguém que procrastina | Quero uma ferramenta que divida minhas tarefas em blocos de tempo com pausas programadas | Para aumentar minha produtividade |
 |Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
 |Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
 
