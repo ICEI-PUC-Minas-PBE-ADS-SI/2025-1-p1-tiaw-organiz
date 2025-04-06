@@ -1,6 +1,12 @@
 # Introdução
+==
+O *OrganiZ* é um projeto que busca facilitar a organização pessoal no dia a dia, permitindo com que os usuários lidem com seus compromissos de maneira mais eficiente. Através de recursos como lembretes, criação de notas, alarmes e uma **interface intuitiva**, o *OrganiZ* oferece um ambiente funcional e agradável para quem deseja estruturar melhor sua rotina.
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Nos dias atuais somos constantemente bombardeados por múltiplas informações, esse excesso de estímulos, em um curto período, acaba nos tr5apalhando e desorientando, tornando difícil lembrar das **prioridades**. Diante disso, temos como **principal objetivo** auxiliar o usuário na organização da sua rotina, promovendo maior clareza mental e promovendo a conquista de suas metas pessoais e proficionais.
+
+A justificativa para o desenvolvimento do *OrganiZ* está na crescente demanda por ferramentas que ajudem na gestão de uma rotina para que assim tenha maior produtividade. Em um mundo que cada vez mais exige agilidade, foco e resiliência, estar organizado não é uma vantagem, mas sim uma **necessidade**.
+
+O público-alvo do *OrganiZ* é amplo: qualquer pessoa que busca uma vida mais organizada pode se beneficiar da ferramenta. Porém, é imprescindível para estudantes, profissionais de empresas, professores e qualquer pessoa que lide com múltiplas tare3fas diariamente. Sendo assim uma solução prática e eficiente para todos que desejam tomar o controle de sua rotina e aumanetar sua produtividade. 
 
 ## Problema
 Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
