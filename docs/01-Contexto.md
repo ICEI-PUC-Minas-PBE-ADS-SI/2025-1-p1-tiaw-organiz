@@ -27,10 +27,19 @@ O *OrganiZ* foi escolhidocomo tema devido ao grande número de pessoas que possu
 
 ## Público-alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação, mas sim oferecer uma visão detalhada do perfil de cada grupo de usuários. Isso inclui informações sobre seu nível de conhecimento prévio, familiaridade com tecnologia, e suas relações hierárquicas ou contextos de uso. Dessa forma, será possível entender melhor as necessidades e expectativas dos diferentes tipos de usuários, garantindo uma experiência mais eficiente e adaptada.
+O *OrganiZ* é voltado para distintos perfis, ams que compartilha a mesma necessidade de organizar melhor sua rotina.
 
-> **Links úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público-alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+###### Estudantes
+ 1. Familiaridade com tecnologia
+ 2. Precisam organizar aulas, trabalhos e provas
+ 3. Valorizam lembretes rápidos e visual simples
+
+###### Profissionais
+ 1. Nível variado de familiaridade com tecnologia
+ 2. Buscam gerenciar tarefas, metas e reuniões
+ 3. Valorizam a prática e eficiência
+
+###### Usuários gerais
+ 1. Familiaridade baixa a média com tecnologia
+ 2. Buscam gerenciar tarefas pessoais e familiares
+ 3. Valorizam interface simples, acessível e intuitiva
