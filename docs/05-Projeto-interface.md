@@ -11,17 +11,15 @@
 
 O fluxo de navegação mapeia as principais etapas de interação que o usuário realiza dentro do sistema.
 
-Aqui está um resumo das interações típicas:
-
-Tela de Login:
+#### Tela de Login:
 
 O usuário insere seu e-mail e senha para acessar sua conta. Caso não tenha uma conta, pode se registrar rapidamente.
 
-Tela Principal/Dashboard:
+#### Tela Principal/Dashboard:
 
 Ao fazer login, o usuário é direcionado para o Dashboard, onde pode visualizar suas tarefas e eventos.
 
-Tela de Tarefas:
+#### Tela de Tarefas:
 
 O usuário pode acessar a tela de Tarefas para visualizar, criar, editar ou excluir tarefas.
 
