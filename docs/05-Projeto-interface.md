@@ -54,11 +54,11 @@ O protótipo interativo é uma versão funcional do design da interface do site 
 
 Este protótipo oferece um ambiente dinâmico onde é possível testar o fluxo de navegação, como por exemplo:
 
-###### Ver a interfaçe de Criação, edição e exclusão de tarefas.
+##### Ver a interfaçe de Criação, edição e exclusão de tarefas.
 
-###### Interfaçe de login e criaçao de conta
+##### Interfaçe de login e criaçao de conta
 
-###### Visualização de  todas as atividades em uma interface limpa e intuitiva.
+##### Visualização de  todas as atividades em uma interface limpa e intuitiva.
 
 Por meio do protótipo, o usuário pode navegar entre as diferentes telas e testar os principais recursos da plataforma, simulando a experiência real de uso.
 
