@@ -50,9 +50,17 @@ Descrição para a tela XPTO
 
 ### Protótipo Interativo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Um protótipo interativo apresenta o projeto das interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse utilizando o software finalizado. Utilize as mesmas ferramentas de criação de wireframes para a montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
+O protótipo interativo é uma versão funcional do design da interface do site *OrganiZ*, permitindo que o usuário experimente de forma prática como será a navegação e as interações no sistema final. A ideia é proporcionar uma visão realista de como as telas se conectam e como as funcionalidades, como a criação de tarefas, metas e eventos, serão utilizadas.
+
+Este protótipo oferece um ambiente dinâmico onde é possível testar o fluxo de navegação, como por exemplo:
+
+###### Ver a interfaçe de Criação, edição e exclusão de tarefas.
+
+###### Interfaçe de login e criaçao de conta
+
+###### Visualização de  todas as atividades em uma interface limpa e intuitiva.
+
+Por meio do protótipo, o usuário pode navegar entre as diferentes telas e testar os principais recursos da plataforma, simulando a experiência real de uso.
 
 **✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
 
