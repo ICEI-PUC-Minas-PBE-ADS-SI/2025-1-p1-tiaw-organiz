@@ -1,27 +1,24 @@
 # Introdução
-==
 O *OrganiZ* é um projeto que busca facilitar a organização pessoal no dia a dia, permitindo com que os usuários lidem com seus compromissos de maneira mais eficiente. Através de recursos como lembretes, criação de notas, alarmes e uma **interface intuitiva**, o *OrganiZ* oferece um ambiente funcional e agradável para quem deseja estruturar melhor sua rotina.
 
 Nos dias atuais somos constantemente bombardeados por múltiplas informações, esse excesso de estímulos, em um curto período, acaba nos tr5apalhando e desorientando, tornando difícil lembrar das **prioridades**. Diante disso, temos como **principal objetivo** auxiliar o usuário na organização da sua rotina, promovendo maior clareza mental e promovendo a conquista de suas metas pessoais e proficionais.
 
 A justificativa para o desenvolvimento do *OrganiZ* está na crescente demanda por ferramentas que ajudem na gestão de uma rotina para que assim tenha maior produtividade. Em um mundo que cada vez mais exige agilidade, foco e resiliência, estar organizado não é uma vantagem, mas sim uma **necessidade**.
 
-O público-alvo do *OrganiZ* é amplo: qualquer pessoa que busca uma vida mais organizada pode se beneficiar da ferramenta. Porém, é imprescindível para estudantes, profissionais de empresas, professores e qualquer pessoa que lide com múltiplas tare3fas diariamente. Sendo assim uma solução prática e eficiente para todos que desejam tomar o controle de sua rotina e aumanetar sua produtividade. 
+O público-alvo do *OrganiZ* é amplo: qualquer pessoa que busca uma vida mais organizada pode se beneficiar da ferramenta. Porém, é **imprescindível** para estudantes, profissionais de empresas, professores e qualquer pessoa que lide com múltiplas tare3fas diariamente. Sendo assim uma solução prática e eficiente para todos que desejam tomar o controle de sua rotina e aumanetar sua produtividade. 
 
 ## Problema
+Com a sobregarga de informações a que somos expostos, principalmete das redes sociais, mensagens instantâneas, reuniões e obrigações, manter uma rotina organizada se torna um desafio constante. Essa desorganização não apenas afeta a **produtividade**, como também gera estresse, ansiedade e a sensação de estar sempre esquecendo de algo importante.
+
+Muitas pessoas relatam dificuldades em manter o foco, estabelecer prioridades, lembrar de compromissos importantes, ter uma boa organização financeira e manter o controle sobre suas metas. Isso é ainda mais gritante em ambientes acadêmicos e corporativos, onde múltiplas tarefas coexistem em prazos curtos e com alta exigência por desempenho. Por este lado, a ausência de um método eficaz para organização pode comprometer o trabalho, equilíbrio emocional, financeiro e relacionamento entre pessoas.
+
+A necessidade de algo que centralize lembretes, anotações e planejamentos de tarefas surge como resposta direta a essa realidade. Pessoas frequentemente buscam blocos de notas físicos, aplicativos genéricos, planilhas, ou simplesmente tentam lembrar pela memória, métodos que de forma isolada são inconsistentes a longo prazo. Onde muitas dessas soluções carecem de uma interface aacessível e organizada, o que afasta usuários com pouca familiaridade com tecnologia ou com rotinas já sobrecarregadas.
+
+O *OrganiZ* surge como resposta a esse cenário, com o porpósito de auxiliar na construção de uma rotina mais clara, objetiva e gerenciável. Sendo utilizado em diversos contextos, desde estudantes que precisam equilibrar dias de provas, estudos e trabalhos, até profissionais que precisam acompanhar reuniões, prazos e tarfaz do dia a dia. Porém, não se resuma apenas a ambientes acadêmicos e de trabalho, trata-se de uma ferramenta voltada para a vida cotidiana, para pessoas que buscam maior clareza e tranquilidade.
+
 Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
-
-> **Links úteis**:
-> - [Objetivos, problema de pesquisa e justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz certezas, suposições e dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
 ## Objetivos
-
 Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
 
 Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
