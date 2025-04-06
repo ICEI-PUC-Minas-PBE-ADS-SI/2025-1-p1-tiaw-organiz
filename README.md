@@ -51,7 +51,8 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Apresentação
 
-* [trabalho amalia 1.pdf](https://github.com/user-attachments/files/19623521/trabalho.amalia.1.pdf)
+* [trabalho amalia TIAW.pdf](https://github.com/user-attachments/files/19624001/trabalho.amalia.TIAW.pdf)
+
 
 https://github.com/user-attachments/assets/7bc617a9-7a54-4766-980f-2c8832b4673f
 
