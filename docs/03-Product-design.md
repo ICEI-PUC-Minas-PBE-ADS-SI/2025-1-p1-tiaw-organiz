@@ -3,12 +3,7 @@
 <span style="color:red">Pré-requisitos: <a href="02-Product-discovery.md"> Product discovery</a></span>
 
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-Neste momento, transformam-se os insights e validações obtidos em soluções tangíveis e utilizáveis. Esta fase envolve a definição de uma proposta de valor, detalhando a prioridade de cada ideia, e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que especificam a interface e a experiência do usuário.
-
-
-## Histórias de usuários
+**Histórias de usuários**
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
@@ -19,8 +14,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |Como alguém que procrastina. | Quero uma ferramenta que divida minhas tarefas em blocos de tempo com pausas programadas. | Para aumentar minha produtividade. |
 |Como alguém que sempre se atrasa de manhã.       | Quero um assistente que me lembro dos passos da minha rotina matinal.   | Para começar o dia sem estresse e esquecimentos.|
 |Como uma pessoa que esquece itens nas compras.  | Quero um aplicativo que crie listas de compras baseadas nos meus hábitos de consumo e produtos em faltas. | Para não haver nenhum esquecimento na compra. |
-|Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
-|Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
+|Como uma pessoa que esquece compromissos. | Quero receber notificações baseadas na minha localização para lembrar de tarefas importantes quando estiver no lugar certo.  | Para não esquecer de ir ao local. |
 
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
