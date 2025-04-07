@@ -48,12 +48,16 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
 | RF-001 |Cadastro e login | ALTA       |
-| RF-002 | Criação e gerenciamento de tarefas  | ALTA   |
-| RF-003 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RF-004 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RF-005 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RF-006 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RF-007 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
+| RF-002 |Criação e gerenciamento de tarefas  | ALTA   |
+| RF-003 |Lembretes e notificações | ALTA     |
+| RF-004 |Organização de documentos e anotações  | ALTA     |
+| RF-005 |Agenda e calendário integrado | MÉDIA     |
+| RF-006 |Sugestões de organização | MÉDIA     |
+| RF-007 |Relatórios de produtividade| BAIXA     |
+| RF-008 |Modo foco e gestão de tempo | MÉDIA     |
+| RF-009 |Compartilhamento de tarefas e projetos| BAIXA     |
+| RF-010 |Sincronização com outras plataformas| MÉDIA     |
+
 
 ### Requisitos não funcionais
 
