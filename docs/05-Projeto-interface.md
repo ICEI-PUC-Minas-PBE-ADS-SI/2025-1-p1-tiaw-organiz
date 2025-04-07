@@ -32,11 +32,38 @@ São protótipos usados no design de interface para sugerir a estrutura de um si
 
 **✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+![image](https://github.com/user-attachments/assets/0df6a4a0-4907-44e4-a395-47e88707d388)
 
-Descrição para a tela XPTO
+Tela de login do usuário.
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
+
+![image](https://github.com/user-attachments/assets/58af4169-ee5c-4eee-b8ea-69b6d4df3b13)
+
+Tela de registro do usuário.
+
+
+![image](https://github.com/user-attachments/assets/b45d7f5c-387d-44a2-8767-d4a76b0011c8)
+
+Menu principal, onde o usuário poderá escolher qual o tipo de lembrete deseja incluir ao sistema, tendo a possibilidade de vizualizar um calendário onde é mostrado todos os compromissos.
+
+
+A partir do próximo WireFrame cada tela de adição, exclusão ou edição de lembretes posssuirá um menu separado para cada categoria, serão as mesmas telas, mudará somente o nome.
+
+
+![image](https://github.com/user-attachments/assets/13811b6d-ea2a-4cb5-a1d9-6c08fe25218e)
+
+Menu para incluir lembretes relacionados ao trabalho.
+
+
+![image](https://github.com/user-attachments/assets/7d07fcdf-f729-4473-9695-f3f15ab98d3f)
+
+Tela de para adidionar lembretes.
+
+
+![image](https://github.com/user-attachments/assets/1d6044ca-cf9c-4483-9888-503a798be9e1)
+
+Tela para a edição ou exclusão de lembretes
+
 
  
 > **Links úteis**:
@@ -64,4 +91,4 @@ Por meio do protótipo, o usuário pode navegar entre as diferentes telas e test
 
 **✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
 
-✅ [Protótipo interativo](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
+✅ [Protótipo interativo] (https://www.figma.com/design/ySIDRrHpAX1edOHvrDIYEr/OrganiZ?node-id=15-3&t=i6rGFGOrra1vytaN-1).
