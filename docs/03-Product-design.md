@@ -63,7 +63,7 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 | ID      | Descrição do Requisito                                                              | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 |O sistema deve suportar 100000 usuarios simultâneos  | BAIXA     |
+| RNF-001 |O sistema deve suportar aumento no número de usuários sem perda de desempenho | BAIXA     |
 | RNF-002 |A interface deve ser intuitiva e fácil de utilizar   | ALTA     |
 | RNF-003 |Compatibilidade entre dispositivos  | MÉDIA     |
 | RNF-004 |O sistema deve carregar a tela inicial em até 2 segundos    | BAIXA      |
