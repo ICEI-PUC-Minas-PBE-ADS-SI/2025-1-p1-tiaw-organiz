@@ -14,10 +14,12 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... | QUERO/PRECISO ... |PARA ...   |
 |--------------------|------------------------------------|----------------------------------------|
-|Como uma pessoa desorganizada  | Quero um aplicativo que categorize automaticamente minhas tarefas | Para que eu possa priorizá-las sem esforço.      |
-|Como alguém que perde prazos de pagamento       | Quero um sistema que agrupe e me avise sobre contas a vencer  | Para evitar juros e multas.  |
-|Como alguém que procrastina | Quero uma ferramenta que divida minhas tarefas em blocos de tempo com pausas programadas | Para aumentar minha produtividade. |
-|Como alguém que sempre se atrasa de manhã       | Quero um assistente que me lembro dos passos da minha rotina matinal   | Para começar o dia sem estresse e esquecimentos.|
+|Como uma pessoa desorganizada.  | Quero um aplicativo que categorize automaticamente minhas tarefas. | Para que eu possa priorizá-las sem esforço.      |
+|Como alguém que perde prazos de pagamento.       | Quero um sistema que agrupe e me avise sobre contas a vencer.  | Para evitar juros e multas.  |
+|Como alguém que procrastina. | Quero uma ferramenta que divida minhas tarefas em blocos de tempo com pausas programadas. | Para aumentar minha produtividade. |
+|Como alguém que sempre se atrasa de manhã.       | Quero um assistente que me lembro dos passos da minha rotina matinal.   | Para começar o dia sem estresse e esquecimentos.|
+|Como uma pessoa que esquece itens nas compras.  | Quero um aplicativo que crie listas de compras baseadas nos meus hábitos de consumo e produtos em faltas. | Para não haver nenhum esquecimento na compra. |
+|Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
 |Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
 
 
