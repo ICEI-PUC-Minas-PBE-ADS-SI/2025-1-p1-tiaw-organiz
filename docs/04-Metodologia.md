@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+Demos inicio ao trabalho realizando pesquisas para saber como tratar do problema, após isso definimos como seria nossa aplicação. Dividimos quais seriam as obrigações de cada um apartir das habilidades dos membros do grupo, de forma que todos participassem ativamente do trabalho. O Miro foi utilizado para produzir o Design Thinking. Para a documentação utilizamos o Git para completar os arquivos. Por fim, para fazermos o protótipo funcional a ferramenta Figma foi utilizada, feito com base nos wireframes e fluxo de usuário.
 
 ## Relação de ambientes de trabalho
 
@@ -46,10 +46,10 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 > A equipe utiliza o Scrum como base para definição do processo de desenvolvimento. [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
 
-- Scrum Master: nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: nome de um membro da equipe, representante dos interesses de todos os envolvidos (stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento: nomes de todos os membros da equipe, pois todos os membros deverão implementar no mínimo duas telas/funcionalidades.
-- Equipe de Design: nomes dos membros da equipe que trabalharão com design.
+- Scrum Master: Otávio Alberto de Souza Palma
+- Product Owner: Luan Carlos Silva Carvalho
+- Equipe de Desenvolvimento: João Paulo Diniz Junior, Luan Carlos Silva Carvalho, Otávio Alberto de Souza Palma, Paulo Henrique Vaz Coelho, Pedro Henrique Mendes de Souza
+- Equipe de Design: João Paulo Diniz Junior, Luan Carlos Silva Carvalho, Otávio Alberto de Souza Palma, Paulo Henrique Vaz Coelho, Pedro Henrique Mendes de Souza
 
 > **Links úteis**:
 > - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
@@ -82,10 +82,12 @@ Liste todas as ferramentas que foram empregadas no projeto, justificando a escol
 
 | Ambiente                            | Plataforma                         | Link de acesso                       |
 |-------------------------------------|------------------------------------|--------------------------------------|
-| Processo de Design Thinking         | Miro                               | https://....   ⚠️ EXEMPLO ⚠️        |
-| Repositório de código fonte         | GitHub                             | https://....   ⚠️ EXEMPLO ⚠️        |
-| Documentos do projeto               | GitHub                             | http://....    ⚠️ EXEMPLO ⚠️        |
-| Gerenciamento do projeto            | GitHub Projects                    | http://....    ⚠️ EXEMPLO ⚠️        |
-| Projeto de interface                | Figma                              | http://....    ⚠️ EXEMPLO ⚠️        |
-| Hospedagem                          | Vercel                             | http://....    ⚠️ EXEMPLO ⚠️        |
+| Processo de Design Thinking         | Miro                               |https://miro.com/app/board/uXjVIPj7eik=/?share_link_id=666093469726|
+| Entrevistas e Highlights            | Miro                               |https://miro.com/app/board/uXjVIPhUJqo=/?share_link_id=704126732938|
+| Personas                            | Miro                               |https://miro.com/app/board/uXjVIPgcYdg=/?share_link_id=553966823983|
+| Repositório de código fonte         | GitHub                             |https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz|
+| Documentos do projeto               | GitHub                             |https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz|
+| Gerenciamento do projeto            | GitHub Projects                    |https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz|
+| Projeto de interface                | Figma                              |https://www.figma.com/design/ySIDRrHpAX1edOHvrDIYEr/OrganiZ?t=3FMCLM1Q3dMIDJOC-1|
+| Hospedagem                          | | |
  
