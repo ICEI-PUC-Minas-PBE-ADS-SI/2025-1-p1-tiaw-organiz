@@ -43,7 +43,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 As tabelas a seguir apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade dos requisitos, aplique uma técnica de priorização e detalhe como essa técnica foi aplicada.
 
-### Requisitos funcionais
+**Requisitos funcionais**
 
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
@@ -59,12 +59,15 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 | RF-010 |Sincronização com outras plataformas| MÉDIA     |
 
 
-### Requisitos não funcionais
+**Requisitos não funcionais**
 
 | ID      | Descrição do Requisito                                                              | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em dispositivos móveis ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar as requisições do usuário em no máximo 3 segundos ⚠️ EXEMPLO ⚠️          | BAIXA      |
+| RNF-001 |O sistema deve suportar 100000 usuarios simultâneos  | BAIXA     |
+| RNF-002 |A interface deve ser intuitiva e fácil de utilizar   | ALTA     |
+| RNF-003 |Compatibilidade entre dispositivos  | MÉDIA     |
+| RNF-004 |O sistema deve carregar a tela inicial em até 2 segundos    | BAIXA      |
+
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
