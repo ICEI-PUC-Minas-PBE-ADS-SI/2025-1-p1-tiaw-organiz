@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Organi<span>z</span></h1>
+    <div class="perfil-icon">👤</div>
+  </header>
+
+  <main>
+    <h2>Compromissos</h2>
+
+    <div class="meses">
+      <button data-mes="0">Jan</button>
+      <button data-mes="1">Fev</button>
+      <button data-mes="2">Mar</button>
+      <button data-mes="3">Abr</button>
+      <button data-mes="4">Mai</button>
+      <button data-mes="5">Jun</button>
+      <button data-mes="6">Jul</button>
+      <button data-mes="7">Ago</button>
+      <button data-mes="8">Set</button>
+      <button data-mes="9">Out</button>
+      <button data-mes="10">Nov</button>
+      <button data-mes="11">Dez</button>
+    </div>
+
+    <div class="calendario">
+      <div class="dias-semana">
+        <span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span><span>SAB</span><span>DOM</span>
+      </div>
+      <div class="numero-dias"></div>
+    </div>
+    <button id="botao-voltar">Voltar</button>
+    <div id="mensagem-voltar" class="mensagem-oculta">Essa parte é de outro integrante</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

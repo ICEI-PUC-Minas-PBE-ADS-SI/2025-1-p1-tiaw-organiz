@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #fefdfc;
+    color: #000;
+  }
+  
+  header {
+    background-color: #8000FF;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  header h1 span {
+    color: #000;
+    font-style: italic;
+  }
+  
+  .perfil-icon {
+    font-size: 40px;
+    padding-left: 70px;
+  }
+  
+  main {
+    padding: 32px;
+  }
+  
+  h2 {
+    margin-bottom: 16px;
+  }
+  
+  .meses {
+    margin-bottom: 16px;
+  }
+  
+  .meses button {
+    margin: 3.2px;
+    padding: 6.4px 12.8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
+  .calendario {
+    border: 2px solid #000;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .dias-semana {
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .dias-semana span {
+    width: 14.28%;
+    border: 1px solid #ccc;
+    padding: 4.8px 0;
+  }
+  
+  .numero-dias {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .numero-dias span {
+    width: 14.28%;
+    border: 1px solid #ccc;
+    padding: 11.2px 4.8px;
+    min-height: 70px;
+    position: relative;
+    font-size: 14.4px;
+  }
+  
+  .compromisso {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 4px; 
+  }
+  
+  .vermelho { background-color: #B71C1C; top: 4px; }
+  .azul { background-color: #0D47A1; top: 16px; }
+  .verde { background-color: #1B5E20; top: 28px; }
+  
+  .meses button.ativo {
+    background-color: #8000FF;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #botao-voltar {
+    background-color: #8000FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 60px;
+  }
+  
+  #mensagem-voltar {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: none;
+  }
+  
+  #mensagem-voltar.visivel {
+    display: block;
+  }
