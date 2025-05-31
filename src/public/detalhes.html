@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes da Pasta</title>
+    <link rel="stylesheet" href="detalhes.css">
+    <link rel="stylesheet" href="app.js">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 onclick="window.location.href='pginicial.html'">OrganiZ</h1>
+        <img src="images/usuário.png" alt="login">
+    </div>
+
+
+    <div class="detalhes" id="detalhes-pasta">
+        <h1>Detalhes da Pasta</h1>
+        <div class="cor-preview" id="preview-cor"></div>
+        <h2 id="nome-pasta"></h2>
+        <p id="descricao-pasta"></p>
+
+
+        <div class="adicionar">
+            <button class="nota" id="btn-nota">Adicionar nota</button>
+            <button class="imagem" id="btn-imagem">Adicionar imagem</button>
+            <button class="evento" onclick="window.location.href='pginicial.html'">Adicionar evento no
+                calendário</button>
+        </div>
+
+        <div class="eventoadicionado">
+
+        </div>
+    </div>
+
+    <!-- add evento -->
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        const pastas = JSON.parse(localStorage.getItem('pastas')) || [];
+        const eventContainer = document.querySelector(".eventoadicionado");
+
+        if (id !== null && pastas[id]) {
+            const pasta = pastas[id];
+            document.getElementById('nome-pasta').textContent = pasta.nome;
+            document.getElementById('descricao-pasta').textContent = pasta.descricao;
+            document.getElementById('preview-cor').style.backgroundColor = pasta.cor;
+
+            const eventos = JSON.parse(localStorage.getItem('eventos_' + id)) || [];
+            eventos.forEach(evento => {
+                if (evento.tipo === 'nota') adicionarNotaSalva(evento.conteudo);
+                if (evento.tipo === 'imagem') adicionarImagemSalva(evento.conteudo);
+            });
+        } else {
+            document.getElementById('detalhes-pasta').innerHTML = "<p>Pasta não encontrada.</p>";
+        }
+
+        document.querySelector('.nota').addEventListener('click', () => {
+            const textarea = document.createElement('textarea');
+            textarea.placeholder = "Digite sua nota aqui...";
+            const salvar = document.createElement('button');
+            salvar.textContent = "Salvar nota";
+            salvar.onclick = () => {
+                const texto = textarea.value.trim();
+                if (texto) {
+                    salvarEvento('nota', texto);
+                    adicionarNotaSalva(texto);
+                    textarea.remove();
+                    salvar.remove();
+                }
+            };
+            eventContainer.appendChild(textarea);
+            eventContainer.appendChild(salvar);
+        });
+
+        document.querySelector('.imagem').addEventListener('click', () => {
+            const input = document.createElement('input');
+            input.type = "file";
+            input.accept = "image/*";
+            input.onchange = () => {
+                const file = input.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = () => {
+                        const base64 = reader.result;
+                        salvarEvento('imagem', base64);
+                        adicionarImagemSalva(base64);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+            input.click();
+        });
+
+        function salvarEvento(tipo, conteudo) {
+            const eventos = JSON.parse(localStorage.getItem('eventos_' + id)) || [];
+            eventos.push({ tipo, conteudo });
+            localStorage.setItem('eventos_' + id, JSON.stringify(eventos));
+        }
+
+        function adicionarNotaSalva(texto) {
+            const p = document.createElement('p');
+            p.textContent = texto;
+            eventContainer.appendChild(p);
+        }
+
+        function adicionarImagemSalva(base64) {
+            const img = document.createElement('img');
+            img.src = base64;
+            img.style.maxWidth = '200px';
+            img.style.marginTop = '10px';
+            eventContainer.appendChild(img);
+        }
+    </script>
+    <button class="voltar" onclick="window.location.href='pastas.html'">Voltar</button>
+</body>
+
+</html>

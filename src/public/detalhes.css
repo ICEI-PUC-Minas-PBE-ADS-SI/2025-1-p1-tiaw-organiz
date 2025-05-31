@@ -1,0 +1,178 @@
+/*Cabeçalho*/
+.header
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8000FF;
+}
+
+.header h1
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    padding-left: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.header img
+{
+    width: 60px;
+    height: 60px;
+    padding-right: 30px;
+}
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+/*restante da pagina: */
+.elementos
+{
+    padding-top: 1px;
+}
+
+.detalhes
+{
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 60px auto 0 auto;
+    background-color: #f3f3f3;
+}
+
+.cor-preview
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+h1
+{
+    margin-top: 0;
+}
+
+.voltar
+{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+
+
+    background-color: #8000FF;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Eventos de adição*/
+.adicionar
+{
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 60px auto 0 auto;
+    background-color: #f3f3f3;
+    
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nota
+{
+    background-color: #8000FF;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.imagem
+{
+    background-color: #8000FF;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.evento
+{
+    background-color: #8000FF;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+/*eventos que posteriormente são adicionados*/
+.eventoadicionado {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.eventoadicionado textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.eventoadicionado button {
+    width: fit-content;
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #8000FF;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.eventoadicionado button:hover {
+    background-color: #5f00cc;
+}
+
+.eventoadicionado p {
+    background-color: #f1f1f1;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #8000FF;
+    font-size: 15px;
+}
+
+.eventoadicionado img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
