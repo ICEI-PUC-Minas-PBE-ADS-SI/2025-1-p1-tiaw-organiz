@@ -31,7 +31,7 @@
 
 ![image](https://github.com/user-attachments/assets/78fbb5cb-5ca4-4990-9658-be799b77d2d0)
 
-[Personas e Proposta de valor.pdf](https://github.com/user-attachments/files/20611602/Personas.e.Proposta.de.valor.pdf)
+[image](https://github.com/user-attachments/files/20611602/Personas.e.Proposta.de.valor.pdf)
 
 
 
