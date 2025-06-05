@@ -16,6 +16,8 @@
 **Entrevistas Qualitativas e Highlights**
 ![image](https://github.com/user-attachments/assets/22b81674-78c1-4576-85f2-1a872225f9b2)
 
+[Entrevista e Highlight.pdf](https://github.com/user-attachments/files/20611960/Entrevista.e.Highlight.pdf)
+
 
 ## Etapa de definição
 
