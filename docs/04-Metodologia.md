@@ -9,30 +9,15 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A r
 
 ## Controle de versão
 
+Durante a construção do projeto OrganiZ, foi utilizado o sistema de versionamento Git, com gerenciamento remoto feito pela plataforma GitHub. A metodologia escolhida pela equipe foi trabalhar com uma branch separada para cada participante, permitindo que cada um desenvolvesse seu módulo de forma isolada, o que trouxe mais organização, produtividade e menor chance de conflitos no código.
 
-A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [GitHub](https://github.com) foi utilizado para hospedagem do repositório.
+A branch principal, chamada de main, ficou responsável por armazenar a versão estável e finalizada do sistema, recebendo os códigos apenas após revisão e validação dos desenvolvimentos feitos nas branches individuais. As unificações do código ocorrem por meio de merges, garantindo que todas as partes estejam integradas corretamente antes de avançar para a versão definitiva.
 
-O projeto segue a seguinte convenção para o nome de branches:
-
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
-
-Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
-
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
+Não houve a aplicação de tags no repositório, embora a equipe reconheça sua importância. Ademais, o time também priorizou escrever mensagens de commits bem explicativas e objetivas, o que facilitou o rastreamento das alterações feitas, tornando o histórico do projeto mais organizado e transparente para todos os envolvidos.
 
 ## Planejamento do projeto
 
 ###  Divisão de papéis
-
-
 
 
 - Scrum Master: Otávio Alberto de Souza Palma
