@@ -55,7 +55,6 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 
 
-https://github.com/user-attachments/assets/7bc617a9-7a54-4766-980f-2c8832b4673f
 
 ## Dicas 
 
