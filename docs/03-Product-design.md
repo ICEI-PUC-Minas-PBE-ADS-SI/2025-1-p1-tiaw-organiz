@@ -57,6 +57,9 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 | RF-008 |Modo foco e gestão de tempo | MÉDIA     |
 | RF-009 |Compartilhamento de tarefas e projetos| BAIXA     |
 | RF-010 |Sincronização com outras plataformas| MÉDIA     |
+| RF-011 |Calendário| ALTA     |
+| RF-012 |Barra de pesquisa| MÉDIA     |
+| RF-013 |Diário pessoal| BAIXA     |
 
 
 **Requisitos não funcionais**
