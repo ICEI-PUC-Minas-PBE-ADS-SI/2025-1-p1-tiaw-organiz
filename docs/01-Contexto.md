@@ -14,15 +14,15 @@ A necessidade de algo que centralize lembretes, anotações e planejamentos de t
 
 ## Objetivos
 
-O objetivo deste projeto é desenvolver um software de organização pessoal, que auxilie os usuários na gestão de suas rotinas, oferecendo uma solução prática, intuitiva e centralizada para o acompanhamento de tarefas, compromissos e notas importantes. O projeto visa atender às necessidades dos usuários que enfrentam dificuldades para se organizar diante à sobre carga de informações e à constante pressão por produtividade.
+Desenvolver um software de organização pessoal que auxilie os usuários na gestão de suas rotinas, oferecendo uma plataforma prática, intuitiva e centralizada para o gerenciamento de tarefas, compromissos, lembretes e anotações. O projeto tem como propósito proporcionar uma solução eficiente para pessoas que enfrentam desafios na organização do tempo e na administração de informações, promovendo mais produtividade, foco e bem-estar no dia a dia. Além disso, o sistema buscará adaptar-se às necessidades de diferentes perfis de usuários, oferecendo recursos que favoreçam a autonomia e o engajamento no uso contínuo da ferramenta.
 
- 1. Compreender as principais dificuldades enfrentadas por diferentes perfis de usuários
- 2. Projetar uma interface intuitiva e acessível
- 3. Integrar funcionalidades como criação de lembretes, notar, alarmes e categorizar por pastas perzonalizadas.
+   - Compreender as principais dificuldades enfrentadas por diferentes perfis de usuários
+   - Projetar uma interface intuitiva e acessível
+   - Integrar funcionalidades como criação de lembretes, anotações, alarmes e categorizar por pastas personalizadas.
 
 ## Justificativa
 
-O *OrganiZ* foi escolhidocomo tema devido ao grande número de pessoas que possue a dificuldade de se mater organizados. O motivo desta iniciativa é a necessidade em diversos contextos acedêmicos, proficionais e pessoais de uma solução eficaz e acessível. O objetivo é desenvolver um aplicativo que centralize as principais atividades do usuário em um único ambiente digital, oferecendo funcionalidades e ferramentas para isso. O público alvo é amplo e diversificado, entratanto inclui principalmete: estudamtes, profissionais, além de pessoas que desejam uma rotina mais estruturada. A base do trabalho será construída por meio de uma abordagem empática, utilizando ferramentas como questionários para entender o problema do usuário
+O *OrganiZ* foi escolhido como tema devido ao grande número de pessoas que possue a dificuldade de se mater organizados. O motivo desta iniciativa é a necessidade em diversos contextos acedêmicos, proficionais e pessoais de uma solução eficaz e acessível. O objetivo é desenvolver um aplicativo que centralize as principais atividades do usuário em um único ambiente digital, oferecendo funcionalidades e ferramentas para isso. O público alvo é amplo e diversificado, entratanto inclui principalmete: estudamtes, profissionais, além de pessoas que desejam uma rotina mais estruturada. A base do trabalho será construída por meio de uma abordagem empática, utilizando ferramentas como questionários para entender o problema do usuário.
 
 ## Público-alvo
 
