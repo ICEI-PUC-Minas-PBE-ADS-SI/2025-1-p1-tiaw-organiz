@@ -33,7 +33,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 ###  Divisão de papéis
 
 
-> A equipe utiliza o Scrum como base para definição do processo de desenvolvimento. [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
+
 
 - Scrum Master: Otávio Alberto de Souza Palma
 - Product Owner: Luan Carlos Silva Carvalho
