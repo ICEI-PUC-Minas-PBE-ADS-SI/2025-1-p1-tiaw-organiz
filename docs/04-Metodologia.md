@@ -29,7 +29,9 @@ Não houve a aplicação de tags no repositório, embora a equipe reconheça sua
 ### Processo
 
 
-Design Thinking
+
+**Design Thinking**
+
 O projeto iniciou com a aplicação da metodologia Design Thinking, com foco na identificação das reais necessidades dos usuários e na busca por soluções criativas. O grupo seguiu um processo centrado no usuário, dividido nas seguintes etapas:
 
 - Exploração do Contexto: A primeira fase envolveu a imersão no ambiente dos usuários, com o objetivo de entender suas rotinas, desafios e expectativas. Realizamos observações e entrevistas para obter uma visão mais ampla do que realmente importa para eles.
@@ -42,7 +44,8 @@ O projeto iniciou com a aplicação da metodologia Design Thinking, com foco na 
 
 - Avaliação e Refinamento: Os protótipos foram testados em cenários reais, permitindo que obtivéssemos insights importantes. Com base nesses testes, fizemos os ajustes necessários para aprimorar a solução antes de seguir para a implementação final.
 
-Scrum no Projeto OrganiZ
+**Scrum**
+
 O Scrum foi a metodologia ágil adotada para o gerenciamento e execução do projeto OrganiZ, permitindo um desenvolvimento iterativo e incremental, com entregas regulares e um acompanhamento contínuo das atividades.
 
 - Scrum Master: Otávio Alberto de Souza Palma. Responsável por garantir que o processo Scrum seja seguido corretamente, facilitando a comunicação e removendo impedimentos que possam surgir ao longo do desenvolvimento.
@@ -52,6 +55,10 @@ O Scrum foi a metodologia ágil adotada para o gerenciamento e execução do pro
 - Equipe de Desenvolvimento: João Paulo Diniz Junior, Luan Carlos Silva Carvalho, Otávio Alberto de Souza Palma, Paulo Henrique Vaz Coelho, Pedro Henrique Mendes de Souza. Cada membro da equipe de desenvolvimento é responsável por implementar as funcionalidades, realizar testes e garantir que as entregas atendam aos requisitos definidos.
 
 - Equipe de Design: João Paulo Diniz Junior, Luan Carlos Silva Carvalho, Otávio Alberto de Souza Palma, Paulo Henrique Vaz Coelho, Pedro Henrique Mendes de Souza. A equipe de design trabalhou em conjunto com os desenvolvedores para garantir que a experiência do usuário fosse fluida, intuitiva e atendesse às necessidades mapeadas na fase de Design Thinking.
+
+[GitHub Projects](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/53)
+
+![image](https://github.com/user-attachments/assets/591cd633-8986-48a8-8f64-255303c84621)
 
  
 
