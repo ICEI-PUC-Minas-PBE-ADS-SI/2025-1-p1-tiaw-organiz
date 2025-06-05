@@ -16,6 +16,8 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |Como uma pessoa que esquece itens nas compras.  | Quero um aplicativo que crie listas de compras baseadas nos meus hábitos de consumo e produtos em faltas. | Para não haver nenhum esquecimento na compra. |
 |Como uma pessoa que esquece compromissos. | Quero receber notificações baseadas na minha localização para lembrar de tarefas importantes quando estiver no lugar certo.  | Para não esquecer de ir ao local. |
 |Como alguém que tem dificuldade em planejar a semana. | Quero um app que monte minha agenda com base nos meus compromissos e tempo livre. | Para ter uma rotina equilibrada e realista. |
+|Como alguém que esquece de tomar remédios. | Quero um lembrete inteligente que considere meus horários e rotina. | Para manter meu tratamento em dia. |
+
 
 
 
