@@ -29,9 +29,31 @@ Não houve a aplicação de tags no repositório, embora a equipe reconheça sua
 ### Processo
 
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, o GitHub Projects, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. 
+Design Thinking
+O projeto iniciou com a aplicação da metodologia Design Thinking, com foco na identificação das reais necessidades dos usuários e na busca por soluções criativas. O grupo seguiu um processo centrado no usuário, dividido nas seguintes etapas:
 
-Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e o link do GitHub Projects.
+    - Exploração do Contexto: A primeira fase envolveu a imersão no ambiente dos usuários, com o objetivo de entender suas rotinas, desafios e expectativas. Realizamos observações e entrevistas para obter uma visão mais ampla do que realmente importa para eles.
+
+    - Definição do Problema: Com base nas descobertas, foi possível identificar os problemas centrais a serem resolvidos. Definimos claramente o que precisava ser abordado, levando em consideração os fatores mais críticos para os usuários.
+
+    - Geração de Ideias: Nesta etapa, focamos na criação de várias soluções possíveis. A equipe trabalhou junta em sessões de brainstorming, explorando diferentes abordagens para resolver os problemas identificados e aperfeiçoando as ideias mais promissoras.
+
+    - Desenvolvimento de Protótipos: Com as ideias selecionadas, criamos protótipos iniciais de baixa fidelidade para validar as soluções com os usuários. Esses protótipos serviram como ferramentas para coleta de feedbacks rápidos e ajustes no design.
+
+    - Avaliação e Refinamento: Os protótipos foram testados em cenários reais, permitindo que obtivéssemos insights importantes. Com base nesses testes, fizemos os ajustes necessários para aprimorar a solução antes de seguir para a implementação final.
+
+Scrum no Projeto OrganiZ
+O Scrum foi a metodologia ágil adotada para o gerenciamento e execução do projeto OrganiZ, permitindo um desenvolvimento iterativo e incremental, com entregas regulares e um acompanhamento contínuo das atividades.
+
+    
+       - Scrum Master: Otávio Alberto de Souza Palma. Responsável por garantir que o processo Scrum seja seguido corretamente, facilitando a comunicação e removendo impedimentos que possam surgir ao longo do desenvolvimento.
+
+       - Product Owner: Luan Carlos Silva Carvalho. Responsável por definir as prioridades e as funcionalidades do produto, garantindo que o trabalho da equipe esteja alinhado com os objetivos e as necessidades dos usuários.
+
+       - Equipe de Desenvolvimento: João Paulo Diniz Junior, Luan Carlos Silva Carvalho, Otávio Alberto de Souza Palma, Paulo Henrique Vaz Coelho, Pedro Henrique Mendes de Souza. Cada membro da equipe de desenvolvimento é responsável por implementar as funcionalidades, realizar testes e garantir que as entregas atendam aos requisitos definidos.
+
+       - Equipe de Design: João Paulo Diniz Junior, Luan Carlos Silva Carvalho, Otávio Alberto de Souza Palma, Paulo Henrique Vaz Coelho, Pedro Henrique Mendes de Souza. A equipe de design trabalhou em conjunto com os desenvolvedores para garantir que a experiência do usuário fosse fluida, intuitiva e atendesse às necessidades mapeadas na fase de Design Thinking.
+
  
 
 ### Ferramentas
