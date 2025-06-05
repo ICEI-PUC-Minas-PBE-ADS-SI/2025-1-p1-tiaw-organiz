@@ -71,10 +71,6 @@ Durante o desenvolvimento do projeto OrganiZ, utilizamos diversas ferramentas pa
 
 
 
-Liste todas as ferramentas que foram empregadas no projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) editor de código, (2) ferramentas de comunicação, (3) ferramentas de diagramação, (4) plataformas de hospedagem, entre outras.
-
-⚠️ EXEMPLO ⚠️ os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
-
 | Ambiente                            | Plataforma                         | Link de acesso                       |
 |-------------------------------------|------------------------------------|--------------------------------------|
 | Processo de Design Thinking         | Miro                               |[Link1,](https://miro.com/welcomeonboard/aWdHemoyUDVKK0IzVFFTaXN4VkJ1cmZNczBKTmdMWkF2L1lPMEN3NFB3eDRjWDFPUlc3a3RvK0ZkbE03S01CUnRieUY2SmhxM0FUTnBVYUJoNU9yWGtFa3R2eVE0V3k3S29iU3F1N0c4Y3JuL24vQ2V3UFNJUVFDY21rTHFqTlFBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=225320206557)  [Link 2, ](https://miro.com/welcomeonboard/VEx5NEJhVC9lSU1BMjRLdFF2c0llRGhJWHRhbVpXQzcxYnlUcXArNGpYQjY1WGNLRmUrVXpEVkxEdk5TMjMzZ1IvblBqdzNYeWZnVGdubUlwVEgybFVFa3R2eVE0V3k3S29iU3F1N0c4Y3FyMHRsRm84NFEreVJwWjh3bytOT2pyVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=877291306634) [Link 3](https://miro.com/welcomeonboard/d0dKdzFtSWp1N0FHNTR0bTF3M3cyMmJTYTRReUNmVnR0T0hnREZKT0ZUMTQ0OTZ4SHkycVhrK25SSUY2eGcvYWNBNmdDU1pVbE80S1RjQVlTc29DVGtFa3R2eVE0V3k3S29iU3F1N0c4Y3Bra3AyZ0FSL2pBYlBlclZaYTl2dEVhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=553833636177)        |
