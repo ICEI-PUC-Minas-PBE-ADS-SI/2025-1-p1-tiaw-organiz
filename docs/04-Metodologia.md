@@ -1,9 +1,7 @@
 
 # Metodologia
 
-
-
-Demos inicio ao trabalho realizando pesquisas para saber como tratar do problema, após isso definimos como seria nossa aplicação. Dividimos quais seriam as obrigações de cada um apartir das habilidades dos membros do grupo, de forma que todos participassem ativamente do trabalho. O Miro foi utilizado para produzir o Design Thinking. Para a documentação utilizamos o Git para completar os arquivos. Por fim, para fazermos o protótipo funcional a ferramenta Figma foi utilizada, feito com base nos wireframes e fluxo de usuário.
+Demos início ao desenvolvimento do OrganiZ realizando pesquisas para entender melhor o problema da falta de organização pessoal e seus impactos na produtividade e na qualidade de vida dos usuários. A partir dessas informações, definimos como seria a estrutura e as funcionalidades da nossa aplicação. As tarefas foram divididas entre os integrantes do grupo, levando em consideração as habilidades individuais de cada um, de forma que todos pudessem colaborar de maneira ativa e eficiente. Para organizar nossas ideias e estruturar as soluções, utilizamos o Miro na criação do Design Thinking. A documentação do projeto foi elaborada e armazenada utilizando o GitHub, garantindo que todos os arquivos estivessem completos e organizados. Por fim, utilizamos o Figma para desenvolver o protótipo funcional, seguindo os wireframes e o fluxo de usuário previamente planejados.
 
 ## Relação de ambientes de trabalho
 
