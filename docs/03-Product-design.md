@@ -60,6 +60,8 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 | RF-011 |Calendário| ALTA     |
 | RF-012 |Barra de pesquisa| MÉDIA     |
 | RF-013 |Diário pessoal| BAIXA     |
+| RF-014 |Planejamento de metas| BAIXA     |
+
 
 
 **Requisitos não funcionais**
