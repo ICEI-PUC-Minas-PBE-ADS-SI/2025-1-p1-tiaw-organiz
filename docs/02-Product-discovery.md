@@ -13,6 +13,8 @@
 
 ![image](https://github.com/user-attachments/assets/9cd18131-157d-4571-a451-abec702d19be)
 
+[Matriz CSD e Mapa de Stakeholders.pdf](https://github.com/user-attachments/files/20612013/Matriz.CSD.e.Mapa.de.Stakeholders.pdf)
+
 **Entrevistas Qualitativas e Highlights**
 ![image](https://github.com/user-attachments/assets/22b81674-78c1-4576-85f2-1a872225f9b2)
 
