@@ -1,7 +1,7 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
+
 
 Demos inicio ao trabalho realizando pesquisas para saber como tratar do problema, após isso definimos como seria nossa aplicação. Dividimos quais seriam as obrigações de cada um apartir das habilidades dos membros do grupo, de forma que todos participassem ativamente do trabalho. O Miro foi utilizado para produzir o Design Thinking. Para a documentação utilizamos o Git para completar os arquivos. Por fim, para fazermos o protótipo funcional a ferramenta Figma foi utilizada, feito com base nos wireframes e fluxo de usuário.
 
@@ -11,7 +11,6 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A r
 
 ## Controle de versão
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
 A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [GitHub](https://github.com) foi utilizado para hospedagem do repositório.
 
@@ -58,7 +57,6 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Processo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
 Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, o GitHub Projects, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. 
 
