@@ -52,6 +52,19 @@ Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e 
 ### Ferramentas
 
 
+Durante o desenvolvimento do projeto OrganiZ, utilizamos diversas ferramentas para garantir uma boa organização, comunicação eficiente e um fluxo de trabalho colaborativo. O Visual Studio Code foi escolhido como editor de código por sua praticidade, leveza e integração com o Git, o que facilitou bastante o versionamento e a colaboração entre os membros da equipe. Para a comunicação do dia a dia, optamos pelo WhatsApp, que nos permitiu resolver rapidamente dúvidas e alinhar decisões importantes. No início do projeto, usamos o Miro para organizar nossas ideias e construir as etapas do Design Thinking, de forma visual e colaborativa. Já o Figma foi a plataforma utilizada para criar o design das telas e os protótipos da interface, possibilitando que todos participassem da construção visual do aplicativo em tempo real. Por fim, centralizamos todo o código e a documentação no GitHub, que também foi usado para controlar as tarefas através do GitHub Projects, garantindo que cada integrante soubesse exatamente o que precisava ser feito e em qual etapa o projeto se encontrava.
+
+| Ferramentas                         | Finalidade no Projeto              | 
+|-------------------------------------|------------------------------------|
+|Visual Studio Code                   | Desenvolvimento do código-fonte do aplicativo                      |
+| Miro                                | Estruturação de ideias, mapas mentais e organização do planejamento inicial                          |
+| Figma                               | 	Elaboração do layout visual e prototipagem interativa da interface do aplicativo                             |
+| Git                                 | Controle de versões do projeto, possibilitando acompanhar alterações e colaborar em grupo                             |
+| WhatsApp                            | Comunicação ágil entre os integrantes da equipe                           |
+| GitHub                              | Armazenamento do repositório, centralização de arquivos e gerenciamento das atividades                   |
+
+
+
 Liste todas as ferramentas que foram empregadas no projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) editor de código, (2) ferramentas de comunicação, (3) ferramentas de diagramação, (4) plataformas de hospedagem, entre outras.
 
 ⚠️ EXEMPLO ⚠️ os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
