@@ -56,12 +56,8 @@ Liste todas as ferramentas que foram empregadas no projeto, justificando a escol
 
 | Ambiente                            | Plataforma                         | Link de acesso                       |
 |-------------------------------------|------------------------------------|--------------------------------------|
-| Processo de Design Thinking         | Miro                               |https://miro.com/app/board/uXjVIPj7eik=/?share_link_id=666093469726|
-| Entrevistas e Highlights            | Miro                               |https://miro.com/app/board/uXjVIPhUJqo=/?share_link_id=704126732938|
-| Personas                            | Miro                               |https://miro.com/app/board/uXjVIPgcYdg=/?share_link_id=553966823983|
-| Repositório de código fonte         | GitHub                             |https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz|
-| Documentos do projeto               | GitHub                             |https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz|
-| Gerenciamento do projeto            | GitHub Projects                    |https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz|
-| Projeto de interface                | Figma                              |https://www.figma.com/design/ySIDRrHpAX1edOHvrDIYEr/OrganiZ?t=3FMCLM1Q3dMIDJOC-1|
-| Hospedagem                          | | |
- 
+| Processo de Design Thinking         | Miro                               |[Link1,](https://miro.com/welcomeonboard/aWdHemoyUDVKK0IzVFFTaXN4VkJ1cmZNczBKTmdMWkF2L1lPMEN3NFB3eDRjWDFPUlc3a3RvK0ZkbE03S01CUnRieUY2SmhxM0FUTnBVYUJoNU9yWGtFa3R2eVE0V3k3S29iU3F1N0c4Y3JuL24vQ2V3UFNJUVFDY21rTHFqTlFBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=225320206557)  [Link 2, ](https://miro.com/welcomeonboard/VEx5NEJhVC9lSU1BMjRLdFF2c0llRGhJWHRhbVpXQzcxYnlUcXArNGpYQjY1WGNLRmUrVXpEVkxEdk5TMjMzZ1IvblBqdzNYeWZnVGdubUlwVEgybFVFa3R2eVE0V3k3S29iU3F1N0c4Y3FyMHRsRm84NFEreVJwWjh3bytOT2pyVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=877291306634) [Link 3](https://miro.com/welcomeonboard/d0dKdzFtSWp1N0FHNTR0bTF3M3cyMmJTYTRReUNmVnR0T0hnREZKT0ZUMTQ0OTZ4SHkycVhrK25SSUY2eGcvYWNBNmdDU1pVbE80S1RjQVlTc29DVGtFa3R2eVE0V3k3S29iU3F1N0c4Y3Bra3AyZ0FSL2pBYlBlclZaYTl2dEVhWWluRVAxeXRuUUgwWDl3Mk1qRGVRPT0hdjE=?share_link_id=553833636177)        |
+| Repositório de código fonte         | GitHub                             | [Código fonte](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz)|
+| Documentos do projeto               | GitHub                             |[docs](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz/tree/main/docs)|
+| Gerenciamento do projeto            | GitHub Projects                    |[Projects](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/53)|
+| Projeto de interface                | Figma                              |[Interface](https://www.figma.com/design/ySIDRrHpAX1edOHvrDIYEr/OrganiZ?node-id=0-1&t=wNr1G4KL92gozb10-1)|
