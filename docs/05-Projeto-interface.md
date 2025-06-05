@@ -65,16 +65,6 @@ Tela de para adidionar lembretes.
 Tela para a edição ou exclusão de lembretes
 
 
- 
-> **Links úteis**:
-> - [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135)
-> - [Protótipos vs wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-
-
 ### Protótipo Interativo
 
 O protótipo interativo é uma versão funcional do design da interface do site *OrganiZ*, permitindo que o usuário experimente de forma prática como será a navegação e as interações no sistema final. A ideia é proporcionar uma visão realista de como as telas se conectam e como as funcionalidades, como a criação de tarefas, metas e eventos, serão utilizadas.
