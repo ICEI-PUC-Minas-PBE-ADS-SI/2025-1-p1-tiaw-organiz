@@ -17,7 +17,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |Como uma pessoa que esquece compromissos. | Quero receber notificações baseadas na minha localização para lembrar de tarefas importantes quando estiver no lugar certo.  | Para não esquecer de ir ao local. |
 |Como alguém que tem dificuldade em planejar a semana. | Quero um app que monte minha agenda com base nos meus compromissos e tempo livre. | Para ter uma rotina equilibrada e realista. |
 |Como alguém que esquece de tomar remédios. | Quero um lembrete inteligente que considere meus horários e rotina. | Para manter meu tratamento em dia. |
-|Como alguém que quer refletir sobre o dia. | Quero um diário digital que me faça perguntas guiadas diariamente. | Para entender melhor meus sentimentos e evolução pessoal. |
+|Como alguém que quer refletir sobre o dia. | Quero um diário digital para digitar e guardar minhas coisas pessoais que penso no dia a dia. | Para entender melhor meus sentimentos e evolução pessoal. |
 
 
 
