@@ -83,11 +83,7 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 
 
-## Restrições
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-O projeto está restrito aos itens apresentados na tabela a seguir.
 
 **Restrição**
 
