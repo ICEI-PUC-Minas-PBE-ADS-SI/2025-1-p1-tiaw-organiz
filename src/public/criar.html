@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OrganiZ - Criação de pasta</title>
     <link rel="stylesheet" href="criar.css">
-    <link rel="stylesheet" href="app.js">
 </head>
 
 <body>
     <div class="header">
-        <h1 onclick="window.location.href='pginicial.html'">OrganiZ</h1>
+        <h1 onclick="window.location.href='index.html'">OrganiZ</h1>
         <img src="images/usuário.png" alt="login">
     </div>
 
@@ -21,7 +20,7 @@
             <div class="quadrado" id="quadrado">
                 <h1 class="nome" id="titulo-nome">Nome</h1>
             </div>
-            <button class="voltar" onclick="window.location.href='pginicial.html'">Voltar</button>
+            <button class="voltar" onclick="window.location.href='index.html'">Voltar</button>
         </div>
 
         <div class="infopasta">
@@ -76,36 +75,85 @@
             <textarea class="inputdes" placeholder="Decreva o que vai organizar aqui!"></textarea>
 
             <button id="btn-salvar">Salvar</button>
-
-            <script>
-                const botaoSalvar = document.getElementById('btn-salvar');
-
-                botaoSalvar.addEventListener('click', function () {
-                    const nome = document.getElementById('input-nome').value.trim();
-                    const cor = document.querySelector('.cor').value;
-                    const descricao = document.querySelector('.inputdes').value.trim();
-
-                    if (!nome) {
-                        alert('Por favor, preencha o nome antes de salvar.');
-                        return;
-                    }
-
-                    // Recuperar pastas existentes ou criar array vazio
-                    const pastas = JSON.parse(localStorage.getItem('pastas')) || [];
-
-                    // Adicionar nova pasta
-                    pastas.push({ nome, cor, descricao });
-
-                    // Salvar de volta no localStorage
-                    localStorage.setItem('pastas', JSON.stringify(pastas));
-
-                    // Redirecionar para a página de listagem
-                    window.location.href = 'pastas.html';
-                });
-            </script>
         </div>
 
     </section>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        const botaoSalvar = document.getElementById('btn-salvar');
+
+        async function obterPasta(id) {
+            const res = await fetch(`http://localhost:3000/pastas/${id}`);
+            if (!res.ok) throw new Error('Erro ao obter pasta');
+            return res.json();
+        }
+
+        async function criarPasta(pasta) {
+            const res = await fetch('http://localhost:3000/pastas', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(pasta)
+            });
+            if (!res.ok) throw new Error('Erro ao criar pasta');
+        }
+
+        async function atualizarPasta(id, pasta) {
+            const res = await fetch(`http://localhost:3000/pastas/${id}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(pasta)
+            });
+            if (!res.ok) throw new Error('Erro ao atualizar pasta');
+        }
+
+        async function carregarPasta() {
+            if (id) {
+                try {
+                    const pasta = await obterPasta(id);
+                    document.getElementById('input-nome').value = pasta.nome;
+                    document.querySelector('.cor').value = pasta.cor;
+                    document.querySelector('.inputdes').value = pasta.descricao;
+
+                    document.getElementById('quadrado').style.backgroundColor = pasta.cor;
+                    document.getElementById('cor-preview').style.backgroundColor = pasta.cor;
+                    document.getElementById('titulo-nome').textContent = pasta.nome;
+                } catch (error) {
+                    console.error('Erro ao carregar pasta:', error);
+                }
+            }
+        }
+
+        botaoSalvar.addEventListener('click', async function () {
+            const nome = document.getElementById('input-nome').value.trim();
+            const cor = document.querySelector('.cor').value;
+            const descricao = document.querySelector('.inputdes').value.trim();
+
+            if (!nome) {
+                alert('Por favor, preencha o nome antes de salvar.');
+                return;
+            }
+
+            const novaPasta = { nome, cor, descricao, notas: [], imagens: [] };
+
+            try {
+                if (id) {
+                    await atualizarPasta(id, novaPasta);
+                } else {
+                    await criarPasta(novaPasta);
+                }
+
+                window.location.href = 'pastas.html';
+            } catch (error) {
+                console.error('Erro ao salvar pasta:', error);
+                alert('Ocorreu um erro ao salvar a pasta.');
+            }
+        });
+
+        carregarPasta();
+    </script>
+
 
 </body>
 

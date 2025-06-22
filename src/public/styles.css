@@ -1,0 +1,180 @@
+/*Cabeçalho*/
+.header
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8000FF;
+}
+
+.header h1
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    padding-left: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.header img
+{
+    width: 60px;
+    height: 60px;
+    padding-right: 30px;
+}
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*divisão esquerda/direita*/
+.geral {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    height: calc(100vh - 100px);
+    box-sizing: border-box;
+}
+
+/* Lado direito */
+.direita {
+    flex: 1;
+    margin-right: 50px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 100%;
+}
+
+.lista {
+    flex: 1;
+    height: 570px;
+    background-color: #cecbcb;
+    margin-left: 70px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #000;
+    align-items: center;
+}
+
+.lista h3 {
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.lista ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista li {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #b8b4b4; 
+    border-radius: 5px;         
+    background-color: #f9f9f9;  
+}
+
+
+.lista input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.calendario {
+    flex: 2; 
+    height: 570px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000000;
+    display: flex;
+}
+
+.calendario h5
+{
+    padding-left: 250px;
+    align-content: center;
+}
+
+/*Esquerda*/
+.pastas {
+    width: 470px;
+    height: 570px;
+    background-color: gray;
+    margin-left: 50px;
+    margin-top: 70px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Cartão de criar*/
+.criar {
+    width: 400px;
+    height: 250px;
+    background-color: #8000FF;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.criar h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+/* Cartão central */
+.central-cartao {
+    width: 400px;
+    height: 250px;
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.central-cartao h1 {
+    font-size: 24px;
+    margin: 0;
+    color: black;
+}
+
+/*footer*/
+footer
+{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}

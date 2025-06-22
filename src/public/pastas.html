@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>OrganiZ - Pastas</title>
-    <link rel="stylesheet" href="pastas.css">
-    <link rel="stylesheet" href="app.js">
+    <link rel="stylesheet" href="pastas.css" />
 </head>
+
 <body>
 
     <div class="header">
-        <h1 onclick="window.location.href='pginicial.html'">OrganiZ</h1>
-        <img src="images/usuário.png" alt="login">
+        <h1 onclick="window.location.href='index.html'">OrganiZ</h1>
+        <img src="images/usuário.png" alt="login" />
     </div>
 
     <h1>Pastas Salvas</h1>
     <div id="lista-pastas"></div>
 
+    <button class="voltar" onclick="window.location.href='index.html'">Voltar</button>
+    <button class="novapasta" onclick="window.location.href='criar.html'">Criar nova pasta</button>
+
     <script>
         const lista = document.getElementById('lista-pastas');
-        let pastas = JSON.parse(localStorage.getItem('pastas')) || [];
 
-        function renderPastas() {
+        async function obterPastas() {
+            const resposta = await fetch('http://localhost:3000/pastas');
+            return resposta.json();
+        }
+
+        async function excluirPasta(id) {
+            await fetch(`http://localhost:3000/pastas/${id}`, {
+                method: 'DELETE'
+            });
+        }
+
+        async function renderizarPastas() {
+            const pastas = await obterPastas();
             lista.innerHTML = '';
 
             if (pastas.length === 0) {
@@ -28,42 +43,41 @@
                 return;
             }
 
-            pastas.forEach((pasta, index) => {
+            pastas.forEach(pasta => {
                 const div = document.createElement('div');
                 div.className = 'pasta';
                 div.innerHTML = `
-                    <div><span class="cor" style="background-color:${pasta.cor}"></span> <strong>${pasta.nome}</strong></div>
-                    <p>${pasta.descricao}</p>
-                    <div class="botoes">
-                        <button class="acessar" onclick="acessarPasta(${index})">Acessar</button>
-                        <button class="editar" onclick="editarPasta(${index})">Editar</button>
-                        <button class="excluir" onclick="excluirPasta(${index})">Excluir</button>
-                    </div>
-                `;
+        <div><span class="cor" style="background-color:${pasta.cor}"></span> <strong>${pasta.nome}</strong></div>
+        <p>${pasta.descricao}</p>
+        <div class="botoes">
+          <button class="acessar">Acessar</button>
+          <button class="editar">Editar</button>
+          <button class="excluir">Excluir</button>
+        </div>
+      `;
+
+                div.querySelector('.acessar').addEventListener('click', () => {
+                    window.location.href = `detalhes.html?id=${pasta.id}`;
+                });
+
+                div.querySelector('.editar').addEventListener('click', () => {
+                    window.location.href = `criar.html?id=${pasta.id}`;
+                });
+
+                div.querySelector('.excluir').addEventListener('click', async () => {
+                    if (confirm('Tem certeza que deseja excluir esta pasta?')) {
+                        await excluirPasta(pasta.id);
+                        renderizarPastas();
+                    }
+                });
+
                 lista.appendChild(div);
             });
         }
 
-        function acessarPasta(index) {
-            window.location.href = `detalhes.html?id=${index}`;
-        }
-
-        function editarPasta(index) {
-            window.location.href = `criar.html?id=${index}`;
-        }
-
-        function excluirPasta(index) {
-            if (confirm('Tem certeza que deseja excluir esta pasta?')) {
-                pastas.splice(index, 1);
-                localStorage.setItem('pastas', JSON.stringify(pastas));
-                renderPastas();
-            }
-        }
-
-        renderPastas();
+        renderizarPastas();
     </script>
 
-    <button class="voltar" onclick="window.location.href='pginicial.html'">Voltar</button>
-    <button class="novapasta" onclick="window.location.href='criar.html'">Criar nova pasta</button>
 </body>
+
 </html>

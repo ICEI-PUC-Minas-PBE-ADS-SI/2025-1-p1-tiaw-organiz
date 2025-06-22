@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="api.js">
+    <title>OrganiZ - Tela de inicio</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 onclick="window.location.href='index.html'">OrganiZ</h1>
+        <img src="images/usuário.png" alt="login">
+    </div>
+
+    <div class="geral">
+        <section class="esquerda">
+            <div class="pastas">
+                <div class="cartoes">
+                    <div class="criar" onclick="window.location.href='criar.html'">
+                        <h1>+</h1>
+                    </div>
+                    <div class="central-cartao" onclick="window.location.href='pastas.html'">
+                        <h1>Central de pastas</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="direita">
+            <div class="lista">
+                <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                    Lista de Tarefas
+                    <button id="ajuda-tarefas"
+                        style="background: none; border: none; font-size: 20px; cursor: pointer;">❓</button>
+                </h3>
+
+                <ul id="taskList">
+                    <li>
+                        <label>
+                            <input type="checkbox" onchange="toggleTask(this)">
+                            Estudar HTML
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" onchange="toggleTask(this)">
+                            Finalizar projeto de Matemática
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" onchange="toggleTask(this)">
+                            Reunião às 14h
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="calendario">
+                <h5>calendário (Parte de outro integrante)</h5>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <h5>© 2025 OrganiZ</h5>
+    </footer>
+
+    <script>
+        function toggleTask(checkbox) {
+            const label = checkbox.parentElement;
+            if (checkbox.checked) {
+                label.style.textDecoration = "line-through";
+                label.style.color = "#888";
+            } else {
+                label.style.textDecoration = "none";
+                label.style.color = "#000";
+            }
+        }
+    </script>
+
+    <!-- Apagar depois -->
+    <script>
+        document.getElementById('ajuda-tarefas').addEventListener('click', () => {
+            alert('Aqui você pode visualizar as tarefas adicionadas no calendário, futuramente vão aparecer aqui, estas são apenas exemplos de como vai ficar no final!');
+        });
+    </script>
+
+
+</body>
+
+</html>
