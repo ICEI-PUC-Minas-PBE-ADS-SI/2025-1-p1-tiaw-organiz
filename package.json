@@ -1,0 +1,27 @@
+{
+  "name": "2025-1-p1-tiaw-organiz",
+  "version": "1.0.0",
+  "description": "`CURSO: Análise e Desenvolvimento de Sistemas`",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+  "start": "json-server --watch src/db/db.json --port 3000"
+}
+,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz/issues"
+  },
+  "homepage": "https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz#readme",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

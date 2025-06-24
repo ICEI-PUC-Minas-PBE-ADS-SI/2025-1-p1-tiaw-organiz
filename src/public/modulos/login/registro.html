@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro - OrganiZ</title>
+  <link rel="stylesheet" href="css_login/registro.css" />
+  <script src="/src/public/assets/js/login.js" defer></script>
+</head>
+
+<body>
+  <header class="top-bar">
+    <button id="toggle-theme" title="Alternar tema">🌙</button>
+  </header>
+
+  <div class="container">
+    <h1 class="logo">OrganiZ</h1>
+
+    <form class="formulario" onsubmit="registrarUsuario(event)">
+      <input type="text" placeholder="Nome" required />
+      <input type="text" placeholder="Sobrenome" required />
+      <input type="text" placeholder="Nome de Usuário" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Senha" required />
+      <input type="password" placeholder="Confirme Senha" required />
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+</body>
+
+</html>
