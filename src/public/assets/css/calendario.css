@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+p {
+  text-align: center;
+  color: white;
+  margin: 50px;
+}
+
+.header {
+  background-color: #8000ff;
+  color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  height: 30px;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.container-branca {
+  background-color: white;
+  color: black;
+  padding: 25px;
+  max-width: 700px;
+  margin: 30px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#month-year {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.day {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 60px;
+  position: relative;
+  border: 1px solid #ddd;
+}
+
+.day.com-evento {
+  background-color: #333;
+  color: white;
+}
+
+.day span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: bold;
+}
+
+.event-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.dot-alta {
+  background-color: red;
+}
+
+.dot-media {
+  background-color: orange;
+}
+
+.dot-baixa {
+  background-color: green;
+}
+
+.botao-evento {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.botao-evento:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/criareventos.css">
+  <title>Criar Evento</title>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html" class="logo-link"><h1>OrganiZ</h1></a>
+    <a href="perfil.html"><img src="./assets/images/perfilicon.webp" alt="login"></a>
+  </div>
+
+  <div class="form-container">
+    <h2>Criar Novo Evento</h2>
+    <form id="formEvento">
+      <div class="campo">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
+        </div>
+
+        <div class="campo">
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+        </div>
+
+        <div class="campo">
+        <label for="prioridade">Prioridade:</label>
+            <select id="prioridade" required>
+                <option value="alta">Alta Prioridade</option>
+                <option value="media">Média Prioridade</option>
+                <option value="baixa">Baixa Prioridade</option>
+            </select>
+        </div>
+
+      <button type="submit">Salvar Evento</button>
+    </form>
+  </div>
+
+  <script src="./assets/js/mock-api.js"></script>
+  <script src="./assets/js/login.js"></script>
+    <script>
+        // Função para obter o usuário atual do sessionStorage
+        function getUsuarioCorrente() {
+          const usuarioJSON = sessionStorage.getItem('usuarioCorrente');
+          return usuarioJSON ? JSON.parse(usuarioJSON) : null;
+        }
+
+        document.getElementById("formEvento").addEventListener("submit", async function(event) {
+            event.preventDefault();
+
+            const usuario = getUsuarioCorrente();
+            if (!usuario) {
+                alert('Usuário não logado');
+                window.location.href = 'modulos/login/login.html';
+                return;
+            }
+
+            const novoEvento = {
+                usuarioId: usuario.id,
+                titulo: document.getElementById("titulo").value,
+                data: document.getElementById("data").value,
+                prioridade: document.getElementById("prioridade").value
+            };
+
+            try {
+                const response = await fetch('/eventos', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(novoEvento)
+                });
+
+                if (response.ok) {
+                    alert("Evento criado com sucesso!");
+                    window.location.href = "calendario.html";
+                } else {
+                    throw new Error('Erro ao criar evento');
+                }
+            } catch (error) {
+                console.error('Erro ao criar evento:', error);
+                alert('Erro ao criar evento');
+            }
+        });
+    </script>
+</body>
+</html>

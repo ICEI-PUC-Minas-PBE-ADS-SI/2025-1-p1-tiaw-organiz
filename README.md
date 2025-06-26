@@ -10,6 +10,7 @@ O nosso projeto foi desenvolvido para auxiliar indivíduos que têm dificuldades
 
 ## Integrantes
 
+* Eduardo Niquini Santiago
 * João Paulo Diniz Junior
 * Luan Carlos Silva Carvalho
 * Otávio Alberto de Souza Palma

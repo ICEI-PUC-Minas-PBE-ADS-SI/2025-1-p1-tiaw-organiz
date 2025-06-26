@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/calendario.css">
+  <title>Calendário</title>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html" class="logo-link"><h1>OrganiZ</h1></a>
+    <a href="perfil.html"><img src="./assets/images/perfilicon.webp" alt="login"></a>
+  </div>
+
+  <div class="container-branca">
+    <h2 id="month-year"></h2>
+    <div class="calendar" id="calendar"></div>
+    <button class="botao-evento" onclick="location.href='criarevento.html'">Criar Evento</button>
+    <button class="botao-evento" onclick="location.href='deletarevento.html'">Deletar Evento</button>
+  </div>
+
+  <script src="./assets/js/mock-api.js"></script>
+  <script src="./assets/js/login.js"></script>
+  <script src="./assets/js/calendario.js"></script>
+</body>
+</html>

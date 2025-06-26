@@ -21,5 +21,44 @@
       "email": "rommel@gmail.com",
       "id": 3
     }
+  ],
+  "perfis": [
+    {
+      "id": 1,
+      "usuarioId": 1,
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com",
+      "dataNascimento": "1990-01-01"
+    },
+    {
+      "id": 2,
+      "usuarioId": 2,
+      "nome": "Usuario Comum",
+      "email": "user@abc.com",
+      "dataNascimento": "1995-05-15"
+    },
+    {
+      "id": 3,
+      "usuarioId": 3,
+      "nome": "Rommel",
+      "email": "rommel@gmail.com",
+      "dataNascimento": "2005-05-10"
+    }
+  ],
+  "eventos": [
+    {
+      "id": 1,
+      "usuarioId": 1,
+      "titulo": "Reunião de equipe",
+      "data": "2025-01-15",
+      "prioridade": "alta"
+    },
+    {
+      "id": 2,
+      "usuarioId": 2,
+      "titulo": "Consulta médica",
+      "data": "2025-01-20",
+      "prioridade": "media"
+    }
   ]
 }

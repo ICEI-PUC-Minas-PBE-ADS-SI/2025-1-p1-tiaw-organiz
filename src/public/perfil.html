@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil</title>
+  <link rel="stylesheet" href="./assets/css/perfil.css">
+</head>
+<body>
+  <div class="header">
+    <a href="index.html"><h1>OrganiZ</h1></a>
+    <a href="perfil.html"><img src="./assets/images/perfilicon.webp" alt="perfil"></a>
+  </div>
+
+  <div class="caixadeperfil">
+    <img class="foto" src="./assets/images/perfilicon.webp" alt="foto de perfil">
+    
+    <div class="info">
+      <div class="campo">
+        <label>Nome:</label>
+        <input type="text" id="nome" disabled>
+        <button onclick="habilitarCampo('nome')">Editar</button>
+      </div>
+
+      <div class="campo">
+        <label>Email:</label>
+        <input type="email" id="email" disabled>
+        <button onclick="habilitarCampo('email')">Editar</button>
+      </div>
+
+      <div class="campo">
+        <label>Data:</label>
+        <input type="date" id="dataNascimento" disabled>
+        <button onclick="habilitarCampo('dataNascimento')">Editar</button>
+      </div>
+
+      <button class="salvar-tudo" onclick="salvarPerfil()">Salvar Tudo</button>
+    </div>
+  </div>
+
+  <script src="./assets/js/mock-api.js"></script>
+  <script src="./assets/js/login.js"></script>
+  <script src="./assets/js/perfil.js"></script>
+</body>
+</html>
