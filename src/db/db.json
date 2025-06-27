@@ -166,25 +166,14 @@
           "descricao": "Tarefas criadas sem pasta específica",
           "notas": [],
           "imagens": [],
-          "tarefas": [
-            {
-              "id": "1751063223514",
-              "titulo": "Luan",
-              "descricao": "",
-              "data": "2025-06-27",
-              "prioridade": "media",
-              "concluida": true,
-              "pastaId": "independente",
-              "createdAt": "2025-06-27T22:27:03.514Z"
-            }
-          ],
+          "tarefas": [],
           "createdAt": "2025-06-27T22:27:03.515Z"
         }
       ],
       "metas": [],
       "configuracoes": {
         "tema": "dark",
-        "ultimaAtualizacao": "2025-06-27T22:29:32.419Z"
+        "ultimaAtualizacao": "2025-06-27T22:47:52.751Z"
       }
     }
   }
