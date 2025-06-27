@@ -1,8 +1,11 @@
 
 # Metodologia
 
-Demos início ao desenvolvimento do OrganiZ realizando pesquisas para entender melhor o problema da falta de organização pessoal e seus impactos na produtividade e na qualidade de vida dos usuários. A partir dessas informações, definimos como seria a estrutura e as funcionalidades da nossa aplicação. As tarefas foram divididas entre os integrantes do grupo, levando em consideração as habilidades individuais de cada um, de forma que todos pudessem colaborar de maneira ativa e eficiente. Para organizar nossas ideias e estruturar as soluções, utilizamos o Miro na criação do Design Thinking. A documentação do projeto foi elaborada e armazenada utilizando o GitHub, garantindo que todos os arquivos estivessem completos e organizados. Por fim, utilizamos o Figma para desenvolver o protótipo funcional, seguindo os wireframes e o fluxo de usuário previamente planejados.
+O desenvolvimento do OrganiZ foi iniciado com a realização de pesquisas voltadas à compreensão do problema da desorganização pessoal e seus impactos na produtividade e na qualidade de vida dos usuários. Com base nessas informações, foram definidas a estrutura e as funcionalidades da aplicação. 
 
+As tarefas foram distribuídas entre os membros da equipe de acordo com as habilidades individuais, visando uma colaboração ativa e eficiente. Para organizar as ideias e estruturar as soluções, foi utilizado o Miro na elaboração do Design Thinking.
+
+A documentação do projeto foi desenvolvida e armazenada no GitHub, assegurando que todos os arquivos permanecessem completos e organizados. O Figma foi utilizado na criação do protótipo funcional, com base nos wireframes e no fluxo de usuário previamente planejados.
 ## Relação de ambientes de trabalho
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
