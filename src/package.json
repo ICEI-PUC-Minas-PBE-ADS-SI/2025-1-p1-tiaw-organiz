@@ -1,8 +1,24 @@
 {
-  "name": "my-v0-project",
-  "version": "0.1.0",
-  "private": true,
+  "name": "organiz-time-manager",
+  "version": "1.0.0",
+  "description": "Gestor de Tempo OrganiZ - Sistema completo de organização pessoal",
+  "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db/db.json"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["organiz", "time-management", "task-manager", "calendar", "goals"],
+  "author": "OrganiZ Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }

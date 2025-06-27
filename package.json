@@ -1,0 +1,7 @@
+{
+  "name": "OrganiZ",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd src && npm start"
+  }
+}

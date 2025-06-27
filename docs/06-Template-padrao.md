@@ -1,12 +1,49 @@
 # Template padrão da aplicação
 
-<span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Especificação do projeto</a></span>, <a href="04-Metodologia.md"> Metodologia</a>, <a href="05-Projeto-interface.md"> Projeto de interface</a>
+Header:
+.header
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8000FF;
+}
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+.header h1
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    padding-left: 30px;
+    color: black;
+    cursor: pointer;
+}
 
-> **Links úteis**:
->
-> - [CSS website layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website page layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect liquid layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and why icons improve your web design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+A escolha da cor #8000FF (um tom de roxo) no header tem base na psicologia das cores. O roxo é conhecido por estimular a imaginação e a criatividade, criando uma sensação de inovação e originalidade logo na primeira visualização do site. Isso faz com que o usuário se sinta motivado e curioso para explorar o conteúdo. O texto em preto mantém o contraste e facilita a leitura.
+
+Body:
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+No corpo da página, o foco é na simplicidade e na organização. O espaço limpo e sem margens desnecessárias ajuda o usuário a manter a atenção no conteúdo principal, sem distrações visuais. A escolha de um layout centralizado facilita a navegação e a busca por informações.
+
+Footer:
+footer
+{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+O rodapé segue esse estilo menor e com cores menos chamativas para não tomar a atenção do usuário, mas sim apenas delimitar um fim para a página.

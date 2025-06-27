@@ -26,12 +26,6 @@ O usuário pode acessar a tela de Tarefas para visualizar, criar, editar ou excl
 
 ## Wireframes
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
-
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
-
 ![image](https://github.com/user-attachments/assets/0df6a4a0-4907-44e4-a395-47e88707d388)
 
 Tela de login do usuário.
@@ -79,4 +73,4 @@ Este protótipo oferece um ambiente dinâmico onde é possível testar o fluxo d
 
 Por meio do protótipo, o usuário pode navegar entre as diferentes telas e testar os principais recursos da plataforma, simulando a experiência real de uso.
 
-✅ [Protótipo interativo] (https://www.figma.com/design/ySIDRrHpAX1edOHvrDIYEr/OrganiZ?node-id=15-3&t=i6rGFGOrra1vytaN-1).
+[Protótipo interativo] (https://www.figma.com/design/ySIDRrHpAX1edOHvrDIYEr/OrganiZ?node-id=15-3&t=i6rGFGOrra1vytaN-1).

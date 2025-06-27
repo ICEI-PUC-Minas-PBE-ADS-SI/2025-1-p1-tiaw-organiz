@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Tarefa - OrganiZ</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-organiz">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col">
+                  <a href="index.html" class="logo-organiz">OrganiZ</a>
+              </div>
+              <div class="col-auto">
+                  <button id="theme-toggle" class="theme-toggle me-3">🌙</button>
+                  <div class="dropdown">
+                      <div class="user-icon dropdown-toggle" data-bs-toggle="dropdown" style="cursor: pointer;">
+                          <i class="fas fa-user"></i>
+                      </div>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                          <li><span class="dropdown-item-text" id="user-name">Usuário</span></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="perfil.html">
+                              <i class="fas fa-user-edit me-2"></i>Editar Perfil
+                          </a></li>
+                          <li><a class="dropdown-item" href="#" onclick="organiz?.logout()">
+                              <i class="fas fa-sign-out-alt me-2"></i>Sair
+                          </a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+      <div class="row justify-content-center">
+          <div class="col-lg-8">
+              <div class="card-organiz card-dark p-4">
+                  <h2 class="text-white mb-4">
+                      <i class="fas fa-plus-circle me-2"></i>
+                      Criar Nova Tarefa
+                  </h2>
+
+                  <form id="tarefa-form" class="form-organiz">
+                      <!-- Título -->
+                      <div class="mb-4">
+                          <label for="tarefa-titulo" class="form-label text-white fw-bold">
+                              <i class="fas fa-heading me-2"></i>
+                              Título da Tarefa
+                          </label>
+                          <input type="text" 
+                                 id="tarefa-titulo" 
+                                 class="form-control" 
+                                 placeholder="Ex: Reunião com equipe, Estudar JavaScript..."
+                                 required>
+                      </div>
+
+                      <!-- Descrição -->
+                      <div class="mb-4">
+                          <label for="tarefa-descricao" class="form-label text-white fw-bold">
+                              <i class="fas fa-align-left me-2"></i>
+                              Descrição (opcional)
+                          </label>
+                          <textarea id="tarefa-descricao" 
+                                    class="form-control" 
+                                    rows="3" 
+                                    placeholder="Detalhes sobre a tarefa..."></textarea>
+                      </div>
+
+                      <!-- Data e Prioridade -->
+                      <div class="row mb-4">
+                          <div class="col-md-6">
+                              <label for="tarefa-data" class="form-label text-white fw-bold">
+                                  <i class="fas fa-calendar me-2"></i>
+                                  Data
+                              </label>
+                              <input type="date" 
+                                     id="tarefa-data" 
+                                     class="form-control" 
+                                     required>
+                          </div>
+                          <div class="col-md-6">
+                              <label for="tarefa-prioridade" class="form-label text-white fw-bold">
+                                  <i class="fas fa-exclamation-triangle me-2"></i>
+                                  Prioridade
+                              </label>
+                              <select id="tarefa-prioridade" class="form-select">
+                                  <option value="baixa">🟢 Baixa</option>
+                                  <option value="media" selected>🟡 Média</option>
+                                  <option value="alta">🔴 Alta</option>
+                              </select>
+                          </div>
+                      </div>
+
+                      <!-- Pasta -->
+                      <div class="mb-4">
+                          <label for="tarefa-pasta" class="form-label text-white fw-bold">
+                              <i class="fas fa-folder me-2"></i>
+                              Pasta (opcional)
+                          </label>
+                          <select id="tarefa-pasta" class="form-select">
+                              <option value="">Selecione uma pasta...</option>
+                              <!-- Pastas serão carregadas aqui -->
+                          </select>
+                          <small class="text-muted">Se não selecionar uma pasta, a tarefa será criada como independente</small>
+                      </div>
+
+                      <!-- Botões -->
+                      <div class="d-flex gap-3">
+                          <button type="submit" class="btn btn-organiz flex-fill">
+                              <i class="fas fa-save me-2"></i>
+                              Criar Tarefa
+                          </button>
+                          <a href="index.html" class="btn btn-outline-light">
+                              <i class="fas fa-times me-2"></i>
+                              Cancelar
+                          </a>
+                      </div>
+                  </form>
+              </div>
+
+              <!-- Preview da Tarefa -->
+              <div class="card-organiz mt-4 p-4">
+                  <h5 class="mb-3">
+                      <i class="fas fa-eye me-2"></i>
+                      Preview da Tarefa
+                  </h5>
+                  <div id="tarefa-preview" class="task-item">
+                      <div class="d-flex align-items-center">
+                          <input type="checkbox" class="form-check-input me-3" disabled style="transform: scale(1.2);">
+                          <div class="flex-grow-1">
+                              <div class="d-flex align-items-center mb-1">
+                                  <span id="preview-titulo" class="fw-bold">Título da tarefa aparecerá aqui</span>
+                                  <span id="preview-prioridade" class="badge ms-2 bg-warning">🟡 Média</span>
+                              </div>
+                              <p id="preview-descricao" class="mb-1 text-muted small" style="display: none;"></p>
+                              <small class="text-muted">
+                                  <i class="fas fa-calendar me-1"></i>
+                                  <span id="preview-data">Selecione uma data</span>
+                                  <span id="preview-pasta" class="ms-2" style="display: none;">
+                                      <i class="fas fa-folder me-1"></i>
+                                      <span></span>
+                                  </span>
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+
+  <!-- Fixed Button -->
+  <a href="index.html" class="btn btn-organiz fixed-btn fixed-btn-left">
+      <i class="fas fa-arrow-left me-2"></i>
+      Voltar
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/criar-tarefa.js"></script>
+</body>
+</html>

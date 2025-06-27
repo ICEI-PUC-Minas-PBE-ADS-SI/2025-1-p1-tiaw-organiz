@@ -26,10 +26,6 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 
 ## Proposta de valor
-
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
-
-##### Proposta para a persona XPTO ⚠️ EXEMPLO ⚠️
  
 **Proposta de Valor**
 
@@ -47,8 +43,6 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 
 ## Requisitos
-
-As tabelas a seguir apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade dos requisitos, aplique uma técnica de priorização e detalhe como essa técnica foi aplicada.
 
 **Requisitos funcionais**
 

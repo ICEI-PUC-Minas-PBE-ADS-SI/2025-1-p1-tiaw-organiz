@@ -1,109 +1,166 @@
-// Sistema de login básico
-const LOGIN_URL = "modulos/login/login.html"
-let RETURN_URL = "index.html"
-const API_URL = "/usuarios"
-
-var db_usuarios = []
-var usuarioCorrente = {}
-
-function initLoginApp() {
-  const pagina = window.location.pathname
-
-  // Verificar se estamos na página de login
-  if (!pagina.includes("login.html")) {
-    sessionStorage.setItem("returnURL", pagina)
-    RETURN_URL = pagina
-
-    const usuarioJSON = sessionStorage.getItem("usuarioCorrente")
-    if (usuarioJSON) {
-      usuarioCorrente = JSON.parse(usuarioJSON)
-    } else {
-      window.location.href = LOGIN_URL
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      showUserInfo("userInfo")
-    })
+function getBaseURL() {
+  if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+    return "http://localhost:3000/api"
   } else {
-    const returnURL = sessionStorage.getItem("returnURL")
-    RETURN_URL = returnURL || "index.html"
-
-    carregarUsuarios(() => {
-      console.log("Usuários carregados")
-    })
+    return "https://two025-1-p1-tiaw-organiz.onrender.com/api"
   }
 }
 
-function carregarUsuarios(callback) {
-  fetch(API_URL)
-    .then((response) => response.json())
-    .then((data) => {
-      db_usuarios = data
-      callback()
+const API_BASE_URL = getBaseURL()
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("🌐 URL da API:", API_BASE_URL)
+  const savedTheme = localStorage.getItem("organiz-theme") || "light"
+  applyTheme(savedTheme)
+
+  const themeToggle = document.getElementById("toggle-theme")
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleTheme)
+  }
+})
+
+async function logarUsuario(event) {
+  event.preventDefault()
+
+  const form = event.target
+  const email = form.querySelector('input[type="email"]').value
+  const senha = form.querySelector('input[type="password"]').value
+  let originalText = ""
+
+  if (!email || !senha) {
+    alert("Por favor, preencha todos os campos!")
+    return
+  }
+
+  try {
+    const submitBtn = form.querySelector('button[type="submit"]')
+    originalText = submitBtn.textContent
+    submitBtn.textContent = "Entrando..."
+    submitBtn.disabled = true
+
+    const response = await fetch(`${API_BASE_URL}/auth/login`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, senha }),
     })
-    .catch((error) => {
-      console.error("Erro ao carregar usuários:", error)
-    })
-}
 
-function loginUser(login, senha) {
-  for (var i = 0; i < db_usuarios.length; i++) {
-    var usuario = db_usuarios[i]
+    const result = await response.json()
 
-    if (login === usuario.login && senha === usuario.senha) {
-      usuarioCorrente.id = usuario.id
-      usuarioCorrente.login = usuario.login
-      usuarioCorrente.email = usuario.email
-      usuarioCorrente.nome = usuario.nome
+    if (result.success) {
+      localStorage.setItem("organiz-user", JSON.stringify(result.usuario))
 
-      sessionStorage.setItem("usuarioCorrente", JSON.stringify(usuarioCorrente))
-      return true
+      window.location.href = "/index.html"
+    } else {
+      alert(result.message)
     }
+  } catch (error) {
+    console.error("Erro ao fazer login:", error)
+    alert("Erro ao conectar com o servidor. Tente novamente.")
+  } finally {
+    const submitBtn = form.querySelector('button[type="submit"]')
+    submitBtn.textContent = originalText
+    submitBtn.disabled = false
   }
-  return false
 }
 
-function logoutUser() {
-  sessionStorage.removeItem("usuarioCorrente")
-  window.location = LOGIN_URL
-}
+async function registrarUsuario(event) {
+  event.preventDefault()
 
-function addUser(nome, login, senha, email) {
-  const usuario = {
-    login: login,
-    senha: senha,
-    nome: nome,
-    email: email,
+  const form = event.target
+  const inputs = form.querySelectorAll("input")
+  const [nome, sobrenome, username, email, senha, confirmarSenha] = Array.from(inputs).map((input) => input.value)
+  let originalText = ""
+
+  if (!nome || !sobrenome || !username || !email || !senha || !confirmarSenha) {
+    alert("Por favor, preencha todos os campos!")
+    return
   }
 
-  fetch(API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(usuario),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      db_usuarios.push(data)
-      console.log("Usuário criado com sucesso")
+  if (senha !== confirmarSenha) {
+    alert("As senhas não coincidem!")
+    return
+  }
+
+  if (senha.length < 6) {
+    alert("A senha deve ter pelo menos 6 caracteres!")
+    return
+  }
+
+  if (!isValidEmail(email)) {
+    alert("Por favor, insira um email válido!")
+    return
+  }
+
+  try {
+    const submitBtn = form.querySelector('button[type="submit"]')
+    originalText = submitBtn.textContent
+    submitBtn.textContent = "Registrando..."
+    submitBtn.disabled = true
+
+    const response = await fetch(`${API_BASE_URL}/auth/register`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        nome,
+        sobrenome,
+        username,
+        email,
+        senha,
+      }),
     })
-    .catch((error) => {
-      console.error("Erro ao criar usuário:", error)
-    })
-}
 
-function showUserInfo(element) {
-  var elemUser = document.getElementById(element)
-  if (elemUser) {
-    elemUser.innerHTML =
-      usuarioCorrente.nome +
-      " (" +
-      usuarioCorrente.login +
-      ") " +
-      '<a onclick="logoutUser()" style="cursor: pointer;">❌</a>'
+    const result = await response.json()
+
+    if (result.success) {
+      alert("Usuário registrado com sucesso! Faça login para continuar.")
+      window.location.href = "/login.html"
+    } else {
+      alert(result.message)
+    }
+  } catch (error) {
+    console.error("Erro ao registrar usuário:", error)
+    alert("Erro ao conectar com o servidor. Tente novamente.")
+  } finally {
+    const submitBtn = form.querySelector('button[type="submit"]')
+    submitBtn.textContent = originalText
+    submitBtn.disabled = false
   }
 }
 
-// Inicializar
-initLoginApp()
+function toggleTheme() {
+  const currentTheme = document.body.classList.contains("dark-mode") ? "dark" : "light"
+  const newTheme = currentTheme === "light" ? "dark" : "light"
+
+  applyTheme(newTheme)
+  localStorage.setItem("organiz-theme", newTheme)
+}
+
+function applyTheme(theme) {
+  const themeToggle = document.getElementById("toggle-theme")
+
+  if (theme === "dark") {
+    document.body.classList.add("dark-mode")
+    if (themeToggle) themeToggle.textContent = "☀️"
+  } else {
+    document.body.classList.remove("dark-mode")
+    if (themeToggle) themeToggle.textContent = "🌙"
+  }
+}
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return emailRegex.test(email)
+}
+
+function checkIfLoggedIn() {
+  const userData = localStorage.getItem("organiz-user")
+  if (userData && (window.location.pathname.includes("login") || window.location.pathname.includes("registro"))) {
+    window.location.href = "/index.html"
+  }
+}
+
+checkIfLoggedIn()

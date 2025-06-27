@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Pasta - OrganiZ</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-organiz">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <a href="index.html" class="logo-organiz">OrganiZ</a>
+                </div>
+                <div class="col-auto">
+                    <button id="theme-toggle" class="theme-toggle me-3">🌙</button>
+                    <div class="dropdown">
+                        <div class="user-icon dropdown-toggle" data-bs-toggle="dropdown" style="cursor: pointer;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><span class="dropdown-item-text" id="user-name">Usuário</span></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="perfil.html">
+                                <i class="fas fa-user-edit me-2"></i>Editar Perfil
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" onclick="organiz?.logout()">
+                                <i class="fas fa-sign-out-alt me-2"></i>Sair
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div id="pasta-content">
+            <!-- Conteúdo será carregado aqui -->
+        </div>
+    </main>
+
+    <!-- Fixed Button -->
+    <a href="pastas.html" class="btn btn-organiz fixed-btn fixed-btn-left">
+        <i class="fas fa-arrow-left me-2"></i>
+        Voltar
+    </a>
+
+    <!-- Modals -->
+    <!-- Modal para adicionar nota do diário -->
+    <div class="modal fade" id="diarioModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-book me-2"></i>
+                        <span id="diario-modal-title">Nova Entrada no Diário</span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="diario-form">
+                        <div class="mb-3">
+                            <label for="diario-titulo" class="form-label">Título da Entrada</label>
+                            <input type="text" id="diario-titulo" class="form-control" placeholder="Ex: Reflexões do dia, Ideias importantes..." required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="diario-conteudo" class="form-label">Conteúdo</label>
+                            <textarea id="diario-conteudo" class="form-control" rows="8" placeholder="Escreva seus pensamentos, ideias, reflexões..." required></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="diario-humor" class="form-label">Como você está se sentindo?</label>
+                                <select id="diario-humor" class="form-select">
+                                    <option value="">Selecione um humor...</option>
+                                    <option value="muito-feliz">😄 Muito Feliz</option>
+                                    <option value="feliz">😊 Feliz</option>
+                                    <option value="neutro">😐 Neutro</option>
+                                    <option value="triste">😔 Triste</option>
+                                    <option value="muito-triste">😢 Muito Triste</option>
+                                    <option value="ansioso">😰 Ansioso</option>
+                                    <option value="motivado">💪 Motivado</option>
+                                    <option value="cansado">😴 Cansado</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="diario-categoria" class="form-label">Categoria</label>
+                                <select id="diario-categoria" class="form-select">
+                                    <option value="pessoal">📝 Pessoal</option>
+                                    <option value="trabalho">💼 Trabalho</option>
+                                    <option value="estudos">📚 Estudos</option>
+                                    <option value="saude">🏥 Saúde</option>
+                                    <option value="relacionamentos">❤️ Relacionamentos</option>
+                                    <option value="hobbies">🎨 Hobbies</option>
+                                    <option value="viagem">✈️ Viagem</option>
+                                    <option value="reflexao">🤔 Reflexão</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-organiz" onclick="salvarEntradaDiario()">
+                        <i class="fas fa-save me-2"></i>
+                        <span id="btn-salvar-diario">Salvar Entrada</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para adicionar nota rápida -->
+    <div class="modal fade" id="notaModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-sticky-note me-2"></i>
+                        Adicionar Nota Rápida
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="nota-content" class="form-control" rows="4" placeholder="Digite sua nota aqui..."></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-organiz" onclick="salvarNota()">Salvar Nota</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para adicionar tarefa -->
+    <div class="modal fade" id="tarefaModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-tasks me-2"></i>
+                        Adicionar Tarefa
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="tarefa-titulo" class="form-label">Título da Tarefa</label>
+                        <input type="text" id="tarefa-titulo" class="form-control" placeholder="Ex: Reunião com equipe">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tarefa-descricao" class="form-label">Descrição (opcional)</label>
+                        <textarea id="tarefa-descricao" class="form-control" rows="3" placeholder="Detalhes da tarefa..."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tarefa-data" class="form-label">Data</label>
+                        <input type="date" id="tarefa-data" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tarefa-prioridade" class="form-label">Prioridade</label>
+                        <select id="tarefa-prioridade" class="form-select">
+                            <option value="baixa">🟢 Baixa</option>
+                            <option value="media" selected>🟡 Média</option>
+                            <option value="alta">🔴 Alta</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-organiz" onclick="salvarTarefa()">Salvar Tarefa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input oculto para upload de imagem -->
+    <input type="file" id="image-input" accept="image/*" style="display: none;">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/pasta-detalhes.js"></script>
+</body>
+</html>

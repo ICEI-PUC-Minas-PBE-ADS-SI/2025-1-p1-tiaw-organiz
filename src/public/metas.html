@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas - OrganiZ</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-organiz">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <a href="index.html" class="logo-organiz">OrganiZ</a>
+                </div>
+                <div class="col-auto">
+                    <button id="theme-toggle" class="theme-toggle me-3">🌙</button>
+                    <div class="dropdown">
+                        <div class="user-icon dropdown-toggle" data-bs-toggle="dropdown" style="cursor: pointer;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><span class="dropdown-item-text" id="user-name">Usuário</span></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="perfil.html">
+                                <i class="fas fa-user-edit me-2"></i>Editar Perfil
+                            </a></li>
+                            <li><a class="dropdown-item" href="#" onclick="organiz?.logout()">
+                                <i class="fas fa-sign-out-alt me-2"></i>Sair
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h1 class="text-white mb-0">
+                        <i class="fas fa-target me-2"></i>
+                        Planejamento de Metas
+                    </h1>
+                    <div class="d-flex gap-2">
+                        <a href="index.html" class="btn btn-organiz">
+                            <i class="fas fa-arrow-left me-2"></i>
+                            Voltar
+                        </a>
+                        <button class="btn btn-organiz" data-bs-toggle="modal" data-bs-target="#metaModal">
+                            <i class="fas fa-plus me-2"></i>
+                            Adicionar Meta
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="metas-container">
+                    <!-- Metas serão carregadas aqui -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para adicionar/editar meta -->
+    <div class="modal fade" id="metaModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="metaModalTitle">
+                        <i class="fas fa-target me-2"></i>
+                        Nova Meta
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="meta-form">
+                        <div class="mb-3">
+                            <label for="meta-categoria" class="form-label">Categoria</label>
+                            <input type="text" id="meta-categoria" class="form-control" placeholder="Ex: Pessoal, Profissional, Saúde..." required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="meta-descricao" class="form-label">Descrição da Meta</label>
+                            <textarea id="meta-descricao" class="form-control" rows="3" placeholder="Descreva sua meta..." required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="meta-icone" class="form-label">Ícone</label>
+                            <select id="meta-icone" class="form-select">
+                                <option value="🎯">🎯 Meta</option>
+                                <option value="📘">📘 Estudo</option>
+                                <option value="💼">💼 Trabalho</option>
+                                <option value="🏃">🏃 Saúde</option>
+                                <option value="🧘‍♀️">🧘‍♀️ Bem-estar</option>
+                                <option value="💰">💰 Finanças</option>
+                                <option value="🎨">🎨 Criatividade</option>
+                                <option value="🎓">🎓 Educação</option>
+                                <option value="❤️">❤️ Relacionamentos</option>
+                                <option value="🏠">🏠 Casa</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-organiz" onclick="salvarMeta()">
+                        <span id="btn-salvar-text">Salvar Meta</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/metas.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # OrganiZ
 
-`CURSO: Analise e Desenvolvimento De Sistemas`
+`CURSO: Análise e Desenvolvimento de Sistemas`
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
 
@@ -10,7 +10,6 @@ O nosso projeto foi desenvolvido para auxiliar indivíduos que têm dificuldades
 
 ## Integrantes
 
-* Eduardo Niquini Santiago
 * João Paulo Diniz Junior
 * Luan Carlos Silva Carvalho
 * Otávio Alberto de Souza Palma
@@ -52,7 +51,11 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Apresentação
 
-[trabalho amalia TIAW (1).pdf](https://github.com/user-attachments/files/19624230/trabalho.amalia.TIAW.1.pdf)
+* <a href="presentation/README.md">Apresentação</a>
+
+
+
+
 
 
 
