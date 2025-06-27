@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   console.log("ID da pasta:", currentPastaId)
 
-  // Aguardar a inicialização do OrganiZ com timeout maior
   let attempts = 0
   const maxAttempts = 50
 
@@ -39,26 +38,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 })
 
-// Configurar event listeners
 function setupEventListeners() {
   updateUserName()
 
-  // Upload de imagem
   const imageInput = document.getElementById("image-input")
   imageInput.addEventListener("change", handleImageUpload)
 
-  // Data padrão para nova tarefa (hoje)
   const today = new Date().toISOString().split("T")[0]
   document.getElementById("tarefa-data").value = today
 
-  // Event listeners para limpar modais
   document.getElementById("diarioModal").addEventListener("hidden.bs.modal", limparFormularioDiario)
   document.getElementById("notaModal").addEventListener("hidden.bs.modal", () => {
     document.getElementById("nota-content").value = ""
   })
 }
 
-// Carregar detalhes da pasta
 function loadPastaDetails() {
   if (!window.organiz || !currentPastaId) return
 
@@ -73,7 +67,6 @@ function loadPastaDetails() {
   renderPastaDetails()
 }
 
-// Renderizar detalhes da pasta
 function renderPastaDetails() {
   const container = document.getElementById("pasta-content")
 
@@ -211,7 +204,6 @@ function renderDiario() {
         `
   }
 
-  // Ordenar por data (mais recente primeiro)
   const entradasOrdenadas = [...currentPasta.diario].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
 
   return entradasOrdenadas

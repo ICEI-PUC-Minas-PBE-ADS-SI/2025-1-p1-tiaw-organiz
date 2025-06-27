@@ -4,7 +4,7 @@ const bootstrap = window.bootstrap
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("Carregando página de metas...")
 
-  // Aguardar a inicialização do OrganiZ
+  // Aguardar a inicialização do Site
   let attempts = 0
   const maxAttempts = 50
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     updateUserName()
   } else {
     console.error("OrganiZ não foi inicializado")
-    // Tentar novamente após um tempo
+    // Tentar de nvo depois de um tempo
     setTimeout(async () => {
       if (window.organiz) {
         await window.organiz.waitForInit()
