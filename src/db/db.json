@@ -37,24 +37,23 @@
         {
           "id": "1",
           "nome": "Trabalho",
-          "cor": "#ffff12",
+          "cor": "#8000FF",
           "descricao": "Tarefas relacionadas ao trabalho",
           "notas": [],
           "imagens": [],
           "tarefas": [
             {
-              "id": "1751049736853",
-              "titulo": "Arroz",
-              "descricao": "Fazer arroz",
+              "id": "1750998886080",
+              "titulo": "Reuniao com os Crias",
+              "descricao": "falar sobre assalto",
               "data": "2025-06-27",
               "prioridade": "media",
               "concluida": true,
               "pastaId": "1",
-              "createdAt": "2025-06-27T18:42:16.853Z"
+              "createdAt": "2025-06-27T04:34:46.080Z"
             }
           ],
-          "createdAt": "2025-01-26T10:00:00.000Z",
-          "diario": []
+          "createdAt": "2025-01-26T10:00:00.000Z"
         },
         {
           "id": "1750998911120",
@@ -67,10 +66,20 @@
           "createdAt": "2025-06-27T04:35:11.120Z"
         }
       ],
-      "metas": [],
+      "metas": [
+        {
+          "id": "1",
+          "categoria": "Profissional",
+          "descricao": "Melhorar produtividade",
+          "icone": "💼",
+          "concluida": true,
+          "createdAt": "2025-01-26T10:00:00.000Z",
+          "updatedAt": "2025-06-27T04:35:18.068Z"
+        }
+      ],
       "configuracoes": {
         "tema": "light",
-        "ultimaAtualizacao": "2025-06-27T19:02:48.425Z"
+        "ultimaAtualizacao": "2025-06-27T04:35:18.077Z"
       }
     },
     "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e": {

@@ -1,6 +1,15 @@
-const API_BASE_URL = "http://localhost:3000/api"
+function getBaseURL() {
+  if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+    return "http://localhost:3000/api"
+  } else {
+    return "https://two025-1-p1-tiaw-organiz.onrender.com/api"
+  }
+}
+
+const API_BASE_URL = getBaseURL()
 
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("🌐 URL da API:", API_BASE_URL)
   const savedTheme = localStorage.getItem("organiz-theme") || "light"
   applyTheme(savedTheme)
 

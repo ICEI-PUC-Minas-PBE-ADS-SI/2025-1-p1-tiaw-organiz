@@ -2,7 +2,7 @@ class OrganiZ {
   constructor() {
     console.log("🏗️ Construindo OrganiZ...")
 
-    this.baseURL = "http://localhost:3000/api"
+    this.baseURL = this.getBaseURL()
     this.currentUser = null
     this.data = {
       pastas: [],
@@ -19,9 +19,18 @@ class OrganiZ {
     })
   }
 
+  getBaseURL() {
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      return "http://localhost:3000/api"
+    } else {
+      return "https://two025-1-p1-tiaw-organiz.onrender.com/api"
+    }
+  }
+
   async init() {
     try {
       console.log("🚀 Iniciando OrganiZ...")
+      console.log("🌐 URL base:", this.baseURL)
       await this.checkAuth()
       this.setupEventListeners()
       this.applyTheme()
