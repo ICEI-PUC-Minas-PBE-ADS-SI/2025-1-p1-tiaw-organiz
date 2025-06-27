@@ -1,0 +1,140 @@
+{
+  "usuarios": [
+    {
+      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@organiz.com",
+      "telefone": "",
+      "dataNascimento": "",
+      "fotoPerfil": ""
+    },
+    {
+      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com",
+      "telefone": "",
+      "dataNascimento": "",
+      "fotoPerfil": ""
+    },
+    {
+      "id": "0in748o4e",
+      "login": "lulu",
+      "senha": "123",
+      "nome": "LULU DO PIMBAS",
+      "email": "lulu@organiz.com",
+      "telefone": "(11) 99999-9999",
+      "dataNascimento": "1995-05-15",
+      "fotoPerfil": ""
+    }
+  ],
+  "dados_usuarios": {
+    "187cb7e5-e097-4224-8bc7-b610c855e2b1": {
+      "pastas": [
+        {
+          "id": "1",
+          "nome": "Trabalho",
+          "cor": "#ffff12",
+          "descricao": "Tarefas relacionadas ao trabalho",
+          "notas": [],
+          "imagens": [],
+          "tarefas": [
+            {
+              "id": "1751049736853",
+              "titulo": "Arroz",
+              "descricao": "Fazer arroz",
+              "data": "2025-06-27",
+              "prioridade": "media",
+              "concluida": true,
+              "pastaId": "1",
+              "createdAt": "2025-06-27T18:42:16.853Z"
+            }
+          ],
+          "createdAt": "2025-01-26T10:00:00.000Z",
+          "diario": []
+        },
+        {
+          "id": "1750998911120",
+          "nome": "Arroz",
+          "cor": "#66ff00",
+          "descricao": "",
+          "notas": [],
+          "imagens": [],
+          "tarefas": [],
+          "createdAt": "2025-06-27T04:35:11.120Z"
+        }
+      ],
+      "metas": [],
+      "configuracoes": {
+        "tema": "light",
+        "ultimaAtualizacao": "2025-06-27T19:02:48.425Z"
+      }
+    },
+    "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e": {
+      "pastas": [],
+      "metas": [],
+      "configuracoes": {
+        "tema": "light",
+        "ultimaAtualizacao": "2025-01-26T10:00:00.000Z"
+      }
+    },
+    "0in748o4e": {
+      "pastas": [
+        {
+          "id": "pasta-exemplo-1",
+          "nome": "Meus Projetos",
+          "cor": "#ff2323",
+          "descricao": "Projetos pessoais e profissionais",
+          "notas": [
+            {
+              "id": "nota-1",
+              "conteudo": "Lembrar de organizar melhor as tarefas!",
+              "createdAt": "2025-01-26T21:30:00.000Z"
+            }
+          ],
+          "imagens": [],
+          "tarefas": [
+            {
+              "id": "tarefa-1",
+              "titulo": "Finalizar projeto OrganiZ",
+              "descricao": "Testar todas as funcionalidades",
+              "data": "2025-01-27",
+              "prioridade": "alta",
+              "concluida": false,
+              "pastaId": "pasta-exemplo-1",
+              "createdAt": "2025-01-26T21:30:00.000Z"
+            },
+            {
+              "id": "tarefa-2",
+              "titulo": "Revisar documentação",
+              "descricao": "Verificar se está tudo correto",
+              "data": "2025-01-28",
+              "prioridade": "media",
+              "concluida": false,
+              "pastaId": "pasta-exemplo-1",
+              "createdAt": "2025-01-26T21:30:00.000Z"
+            }
+          ],
+          "createdAt": "2025-01-26T21:30:00.000Z"
+        }
+      ],
+      "metas": [
+        {
+          "id": "meta-1",
+          "categoria": "Organização",
+          "descricao": "Usar o OrganiZ todos os dias para melhorar produtividade",
+          "icone": "🎯",
+          "concluida": false,
+          "createdAt": "2025-01-26T21:30:00.000Z"
+        }
+      ],
+      "configuracoes": {
+        "tema": "light",
+        "ultimaAtualizacao": "2025-01-26T21:30:00.000Z"
+      }
+    }
+  }
+}
