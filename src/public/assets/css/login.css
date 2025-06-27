@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  background: linear-gradient(135deg, #7500f5 50%, #000 50%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+  background: linear-gradient(135deg, #1e1e1e 50%, #000000 50%);
+  color: white;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+#toggle-theme {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: #333;
+}
+
+#toggle-theme:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+body.dark-mode #toggle-theme {
+  color: #f1c40f;
+}
+
+.container {
+  text-align: center;
+  color: black;
+}
+
+body.dark-mode .container {
+  color: white;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.icon-user {
+  font-size: 2.5rem;
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark-mode .icon-user {
+  background-color: #444;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario input {
+  width: 300px;
+  padding: 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  text-align: left;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode .formulario input {
+  background-color: #222;
+  color: white;
+}
+
+.botoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.botoes button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #7500f5;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botoes button:hover {
+  background-color: #5e00c1;
+}

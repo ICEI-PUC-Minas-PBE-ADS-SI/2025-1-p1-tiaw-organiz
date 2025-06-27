@@ -1,78 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/login.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="banner">
-        <img src="./assets/images/banner_ti.png" alt="" />
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrganiZ - Gestor de Tempo</title>
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header-organiz">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col">
+                  <a href="index.html" class="logo-organiz">OrganiZ</a>
+              </div>
+              <div class="col-auto">
+                  <button id="theme-toggle" class="theme-toggle me-3">🌙</button>
+                  <div class="dropdown">
+                      <div class="user-icon dropdown-toggle" data-bs-toggle="dropdown" style="cursor: pointer;">
+                          <i class="fas fa-user"></i>
+                      </div>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                          <li><span class="dropdown-item-text" id="user-name">Usuário</span></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="perfil.html">
+                              <i class="fas fa-user-edit me-2"></i>Editar Perfil
+                          </a></li>
+                          <li><a class="dropdown-item" href="#" onclick="organiz?.logout()">
+                              <i class="fas fa-sign-out-alt me-2"></i>Sair
+                          </a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="barra-info">
-        <nav class="menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Sobre nós</a></li>
-          </ul>
-        </nav>
-        <div class="dados-usuario">
-          <span id="userInfo"></span>
-        </div>
+  </header>
+
+ 
+  <section class="container mt-4">
+      <div class="row g-3">
+          <div class="col-md-4">
+              <div class="card-organiz text-center p-3" style="background: linear-gradient(135deg, #28a745, #20c997);">
+                  <div class="d-flex align-items-center justify-content-center">
+                      <i class="fas fa-check-circle fa-2x text-white me-3"></i>
+                      <div>
+                          <h3 class="text-white mb-0" id="tarefas-concluidas">0</h3>
+                          <small class="text-white">Concluídas</small>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card-organiz text-center p-3" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">
+                  <div class="d-flex align-items-center justify-content-center">
+                      <i class="fas fa-clock fa-2x text-white me-3"></i>
+                      <div>
+                          <h3 class="text-white mb-0" id="tarefas-pendentes">0</h3>
+                          <small class="text-white">Pendentes</small>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card-organiz text-center p-3" style="background: linear-gradient(135deg, #dc3545, #e83e8c);">
+                  <div class="d-flex align-items-center justify-content-center">
+                      <i class="fas fa-exclamation-triangle fa-2x text-white me-3"></i>
+                      <div>
+                          <h3 class="text-white mb-0" id="tarefas-atrasadas">0</h3>
+                          <small class="text-white">Atrasadas</small>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </header>
-    <main>
-        <h3>Boas vindas</h3>
-        <p>Sejam bem-vindos à home-page do projeto de TI 1 - Trabalho
-        Interdisciplinar</p>
-        <p>Esse conteúdo que você está lendo foi criado para exemplificar como
-        criar o seu site integrado com o ambiente de login e o back end que
-        utiliza o JSON Server.</p>
-        <p>Ao criar o seu site, você deve adaptar esse código para sua neessidade ou começar do zero, excluindo todo esse conteúdo.
-        </p>
+  </section>
 
-        <h3>Arquivos do site (Front End)</h3>
-        <p>Para montar seu site, edite os arquivos existentes e crie novos arquivos na pasta <code>public</code> que mantem todos os arquivos da parte de Front End do site, a interface que é vista pelo usuário no navegador.</p>
+  
+  <main class="container my-5">
+      <div class="row g-4">
+          
+          <div class="col-lg-4">
+              <div class="card-organiz card-dark p-4">
+                  
+                  <div class="mb-4">
+                      <h5 class="text-white mb-3">
+                          <i class="fas fa-search me-2"></i>
+                          Pesquisar Pastas
+                      </h5>
+                      <div class="search-container">
+                          <i class="fas fa-search search-icon"></i>
+                          <input type="text" id="search-input" class="form-control search-input" placeholder="Buscar pastas...">
+                      </div>
+                      <div id="search-results" class="mt-3"></div>
+                  </div>
 
-        <p>Nesta pasta <code>public</code>, sugerimos que você organize os arquivos do seu site da seguinte maneira:</p>
-        <ul>
-            <li><strong>Pasta <code>assets</code></strong>: os arquivos de formatação (CSS), os scripts (JS), as imagens utilizadas no site (JPG, PNG, GIF, SVG, etc), fontes (TTF) e outros arquivos gerais utilizados por todo o site.</li>
-            <li><strong>Pasta <code>modulos</code></strong>: os arquivos utilizados na implementação das funcionalidades do site. Separe uma sub-pasta para cada novo módulo ou funcionalidade. Pode também ser utilizado para dividir o trabalho de cada membro do grupo.</li>
-            <li><strong>Arquivo <code>index.html</code></strong>: arquivo que representa a "home page" do site.</li>
-        </ul>
+                  
+                  <div class="d-grid gap-3">
+                      <a href="criar-tarefa.html" class="btn-organiz text-center py-4">
+                          <i class="fas fa-plus-circle fa-2x d-block mb-2"></i>
+                          <span class="fs-4 fw-bold">Criar Tarefa</span>
+                      </a>
+                      
+                      <a href="criar-pasta.html" class="btn btn-light text-dark py-3">
+                          <i class="fas fa-folder-plus me-2"></i>
+                          <span class="fw-bold">Criar Pasta</span>
+                      </a>
+                      
+                      <a href="pastas.html" class="btn btn-light text-dark py-3">
+                          <i class="fas fa-folder-open me-2"></i>
+                          <span class="fw-bold">Central de Pastas</span>
+                      </a>
+                      
+                      <a href="metas.html" class="btn btn-light text-dark py-3">
+                          <i class="fas fa-target me-2"></i>
+                          <span class="fw-bold">Metas</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
 
-        <h3>Módulo de Login</h3>
-        <p>O módulo de login de usuário traz uma funcionalidade completa de registro de usuários e validação de login e senha.</p>
-        <h4>Integração do site com módulo de Login</h4>
-        <p>Para utilizar o módulo de login, basta incluir o script na sua página colocando a seguinte tag no HEAD</p>
-        <pre>&lt;script src="./assets/js/login.js"&gt&lt;script&gt;</pre>
-        <p>Ao incluir o script de login na sua página, caso o usuário ainda não tenha efetuado login, ao acessar a home-page do site, o navegador será direcionado para o formulário de <strong>Identificação de Usuário</strong>. Se o usuário informar corretamente o login e a senha, o navegador será direcionado para a Home-Page.</p>
-        <h4>Sessão do usuário logado</h4>
-        <p>Assim que o usuário se identifica e acessa a parte privada do site, o módulo de login cria uma chave do sessionStorage do navegador com o título <strong>usuarioCorrente</strong> e cujo conteúdo é um objeto com os atributos: id, nome, login, senha e email. </p>
-        <h4>Base de dados de usuários</h4>
-        <p>Inicialmente o módulo de login é configurado com dois usuários: </p>
-        <ul>
-            <li>admin - Senha: 123</li>
-            <li>user - Senha: 123</li>
-        </ul>
+          <div class="col-lg-8">
+              <div class="row g-4">
+               
+                  <div class="col-12">
+                      <div class="card-organiz p-4">
+                          <div class="d-flex justify-content-between align-items-center mb-3">
+                              <h5 class="mb-0">
+                                  <i class="fas fa-tasks me-2"></i>
+                                  Lista de Tarefas
+                              </h5>
+                              <button class="btn btn-link text-muted" onclick="showTaskHelp()">
+                                  <i class="fas fa-question-circle"></i>
+                              </button>
+                          </div>
+                          <div id="task-list" class="task-list">
+                             
+                          </div>
+                      </div>
+                  </div>
 
-        <h3>Servidor Web e API baseada no JSON Server (Back end)</h3>
-        <p>O ambiente de trabalho disponibilizado para suportar o Trabalho Interdisciplinar 1 é baseado no Node.js. A aplicação de back end utiliza o módulo JSON Server para criar um Servidor Web que prove duas estruturas separadas:
-        <ul>
-            <li><strong>Arquivos estáticos (Pasta <code>public</code>)</strong>: da acesso aos arquivos utilizados no front end (HTML, CSS e JavaScript).</li>
-            <li><strong>API RESTful (pasta <code>db</code>)</strong>: uma interface para acesso aos dados definidos no arquivo db.json.</li>
-        </ul></p>
+                 
+                  <div class="col-12">
+                      <div id="calendar-container">
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
 
-        <h4>Arquitetura do site</h4>
-        <p>A imagem que se segue apresenta a arquitetura desse ambiente, mostrando as duas refletindo as pastas desse ambiente.</p>
-        <p><img class="img-fluid d-block w-75 m-auto" src="./assets/images/servidor.png" alt=""></p>
+ 
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+      <div class="container">
+          <p class="mb-0">© 2025 OrganiZ - Gestor de Tempo</p>
+      </div>
+  </footer>
 
-        <h4>Arquivo db.json</h4>
-        <p>O arquivo JSON utilizado para definição das estruturas dos dados providos pela aplicação é localizado na pasta db e tem um formato como o mostrado no exemplo da figura a seguir. Esse arquivo define uma estrutura hipotética de contatos que descreve itens com os seguintes atributos: <code>id</code>, <code>nome</code> e <code>cidade</code>. para o JSON Server, é fundamental que toda estrutura tenha um atributo de identificador de nome <code>id</code>.</p>
-        <p><img class="img-fluid d-block w-50 m-auto" src="./assets/images/arquivo_json.png" alt=""></p>
-    </main>
-  </body>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
 </html>

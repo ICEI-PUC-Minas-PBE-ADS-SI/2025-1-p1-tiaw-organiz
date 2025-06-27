@@ -1,74 +1,157 @@
+const API_BASE_URL = "http://localhost:3000/api"
 
-async function registrarUsuario(e) {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("organiz-theme") || "light"
+  applyTheme(savedTheme)
 
-  const inputs = document.querySelectorAll("form input");
-  const nome = inputs[0].value.trim();
-  const sobrenome = inputs[1].value.trim();
-  const usuario = inputs[2].value.trim();
-  const email = inputs[3].value.trim();
-  const senha = inputs[4].value;
-  const confirmar = inputs[5].value;
+  const themeToggle = document.getElementById("toggle-theme")
+  if (themeToggle) {
+    themeToggle.addEventListener("click", toggleTheme)
+  }
+})
 
-  if (senha !== confirmar) {
-    alert("As senhas não coincidem!");
-    return;
+async function logarUsuario(event) {
+  event.preventDefault()
+
+  const form = event.target
+  const email = form.querySelector('input[type="email"]').value
+  const senha = form.querySelector('input[type="password"]').value
+  let originalText = ""
+
+  if (!email || !senha) {
+    alert("Por favor, preencha todos os campos!")
+    return
   }
 
-  const res = await fetch('http://localhost:3000/usuarios');
-  const usuarios = await res.json();
+  try {
+    const submitBtn = form.querySelector('button[type="submit"]')
+    originalText = submitBtn.textContent
+    submitBtn.textContent = "Entrando..."
+    submitBtn.disabled = true
 
-  const existe = usuarios.some(u => u.email === email || u.usuario === usuario);
-  if (existe) {
-    alert("Usuário já existe com este email ou nome de usuário.");
-    return;
+    const response = await fetch(`${API_BASE_URL}/auth/login`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, senha }),
+    })
+
+    const result = await response.json()
+
+    if (result.success) {
+      localStorage.setItem("organiz-user", JSON.stringify(result.usuario))
+
+      window.location.href = "/index.html"
+    } else {
+      alert(result.message)
+    }
+  } catch (error) {
+    console.error("Erro ao fazer login:", error)
+    alert("Erro ao conectar com o servidor. Tente novamente.")
+  } finally {
+    const submitBtn = form.querySelector('button[type="submit"]')
+    submitBtn.textContent = originalText
+    submitBtn.disabled = false
   }
-
-  await fetch('http://localhost:3000/usuarios', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ nome, sobrenome, usuario, email, senha })
-  });
-
-  alert("Registro realizado com sucesso!");
-  window.location.href = "login.html";
 }
 
+async function registrarUsuario(event) {
+  event.preventDefault()
 
+  const form = event.target
+  const inputs = form.querySelectorAll("input")
+  const [nome, sobrenome, username, email, senha, confirmarSenha] = Array.from(inputs).map((input) => input.value)
+  let originalText = ""
 
-async function logarUsuario(e) {
-  e.preventDefault();
+  if (!nome || !sobrenome || !username || !email || !senha || !confirmarSenha) {
+    alert("Por favor, preencha todos os campos!")
+    return
+  }
 
-  const email = document.querySelectorAll("form input")[0].value.trim();
-  const senha = document.querySelectorAll("form input")[1].value;
+  if (senha !== confirmarSenha) {
+    alert("As senhas não coincidem!")
+    return
+  }
 
-  const res = await fetch(`http://localhost:3000/usuarios?email=${email}&senha=${senha}`);
-  const usuarios = await res.json();
+  if (senha.length < 6) {
+    alert("A senha deve ter pelo menos 6 caracteres!")
+    return
+  }
 
-  if (usuarios.length > 0) {
-    localStorage.setItem("usuarioLogado", JSON.stringify(usuarios[0]));
-    window.location.href = "/src/public/about.html";
-  } else {
-    alert("Email ou senha incorretos.");
+  if (!isValidEmail(email)) {
+    alert("Por favor, insira um email válido!")
+    return
+  }
+
+  try {
+    const submitBtn = form.querySelector('button[type="submit"]')
+    originalText = submitBtn.textContent
+    submitBtn.textContent = "Registrando..."
+    submitBtn.disabled = true
+
+    const response = await fetch(`${API_BASE_URL}/auth/register`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        nome,
+        sobrenome,
+        username,
+        email,
+        senha,
+      }),
+    })
+
+    const result = await response.json()
+
+    if (result.success) {
+      alert("Usuário registrado com sucesso! Faça login para continuar.")
+      window.location.href = "/login.html"
+    } else {
+      alert(result.message)
+    }
+  } catch (error) {
+    console.error("Erro ao registrar usuário:", error)
+    alert("Erro ao conectar com o servidor. Tente novamente.")
+  } finally {
+    const submitBtn = form.querySelector('button[type="submit"]')
+    submitBtn.textContent = originalText
+    submitBtn.disabled = false
   }
 }
 
+function toggleTheme() {
+  const currentTheme = document.body.classList.contains("dark-mode") ? "dark" : "light"
+  const newTheme = currentTheme === "light" ? "dark" : "light"
 
+  applyTheme(newTheme)
+  localStorage.setItem("organiz-theme", newTheme)
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.getElementById('toggle-theme');
-  const currentTheme = localStorage.getItem('theme');
+function applyTheme(theme) {
+  const themeToggle = document.getElementById("toggle-theme")
 
-  if (currentTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-    if (toggleButton) toggleButton.textContent = '🌞';
+  if (theme === "dark") {
+    document.body.classList.add("dark-mode")
+    if (themeToggle) themeToggle.textContent = "☀️"
   } else {
-    if (toggleButton) toggleButton.textContent = '🌙';
+    document.body.classList.remove("dark-mode")
+    if (themeToggle) themeToggle.textContent = "🌙"
   }
+}
 
-  toggleButton?.addEventListener('click', () => {
-    const isDark = document.body.classList.toggle('dark-mode');
-    toggleButton.textContent = isDark ? '🌞' : '🌙';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
-});
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return emailRegex.test(email)
+}
+
+function checkIfLoggedIn() {
+  const userData = localStorage.getItem("organiz-user")
+  if (userData && (window.location.pathname.includes("login") || window.location.pathname.includes("registro"))) {
+    window.location.href = "/index.html"
+  }
+}
+
+checkIfLoggedIn()
