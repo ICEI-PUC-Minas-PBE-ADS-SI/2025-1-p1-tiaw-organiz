@@ -352,6 +352,35 @@ body.dark-mode .search-input::placeholder {
   border-left-color: var(--success-color);
 }
 
+/* CORREÇÃO: Checkboxes visíveis em modo claro */
+.form-check-input {
+  background-color: white !important;
+  border: 2px solid #6c757d !important;
+  width: 1.2em !important;
+  height: 1.2em !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.form-check-input:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 0.2rem rgba(128, 0, 255, 0.25) !important;
+}
+
+/* Checkboxes no modo escuro */
+body.dark-mode .form-check-input {
+  background-color: #444 !important;
+  border-color: #666 !important;
+}
+
+body.dark-mode .form-check-input:checked {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
 .fixed-btn {
   position: fixed;
   bottom: 2rem;

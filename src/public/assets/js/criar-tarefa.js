@@ -1,6 +1,8 @@
+// JavaScript específico para criar tarefa
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("Carregando página de criar tarefa...")
 
+  // Aguardar a inicialização do OrganiZ com timeout maior
   let attempts = 0
   const maxAttempts = 50
 
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 })
 
+// Configurar formulário
 function setupForm() {
   const form = document.getElementById("tarefa-form")
   const tituloInput = document.getElementById("tarefa-titulo")
@@ -29,32 +32,38 @@ function setupForm() {
   const prioridadeSelect = document.getElementById("tarefa-prioridade")
   const pastaSelect = document.getElementById("tarefa-pasta")
 
+  // Definir data padrão como hoje
   const today = new Date().toISOString().split("T")[0]
   dataInput.value = today
   updatePreview()
 
+  // Atualizar preview em tempo real
   tituloInput.addEventListener("input", updatePreview)
   descricaoInput.addEventListener("input", updatePreview)
   dataInput.addEventListener("change", updatePreview)
   prioridadeSelect.addEventListener("change", updatePreview)
   pastaSelect.addEventListener("change", updatePreview)
 
+  // Submissão do formulário
   form.addEventListener("submit", (e) => {
     e.preventDefault()
     criarTarefa()
   })
 }
 
+// Carregar pastas no select
 function loadPastasSelect() {
   if (!window.organiz) return
 
   const select = document.getElementById("tarefa-pasta")
   const pastas = window.organiz.getAllPastas()
 
+  // Limpar opções existentes (exceto a primeira)
   while (select.children.length > 1) {
     select.removeChild(select.lastChild)
   }
 
+  // Adicionar pastas
   pastas.forEach((pasta) => {
     const option = document.createElement("option")
     option.value = pasta.id
@@ -63,6 +72,7 @@ function loadPastasSelect() {
   })
 }
 
+// Atualizar preview da tarefa
 function updatePreview() {
   const titulo = document.getElementById("tarefa-titulo").value.trim() || "Título da tarefa aparecerá aqui"
   const descricao = document.getElementById("tarefa-descricao").value.trim()
@@ -70,8 +80,10 @@ function updatePreview() {
   const prioridade = document.getElementById("tarefa-prioridade").value
   const pastaId = document.getElementById("tarefa-pasta").value
 
+  // Atualizar título
   document.getElementById("preview-titulo").textContent = titulo
 
+  // Atualizar prioridade
   const previewPrioridade = document.getElementById("preview-prioridade")
   const prioridadeConfig = {
     baixa: { emoji: "🟢", text: "Baixa", class: "bg-success" },
@@ -83,6 +95,7 @@ function updatePreview() {
   previewPrioridade.textContent = `${config.emoji} ${config.text}`
   previewPrioridade.className = `badge ms-2 ${config.class}`
 
+  // Atualizar descrição
   const previewDescricao = document.getElementById("preview-descricao")
   if (descricao) {
     previewDescricao.textContent = descricao
@@ -91,6 +104,7 @@ function updatePreview() {
     previewDescricao.style.display = "none"
   }
 
+  // Atualizar data
   const previewData = document.getElementById("preview-data")
   if (data) {
     const dataFormatada = new Date(data).toLocaleDateString("pt-BR")
@@ -99,6 +113,7 @@ function updatePreview() {
     previewData.textContent = "Selecione uma data"
   }
 
+  // Atualizar pasta
   const previewPasta = document.getElementById("preview-pasta")
   if (pastaId && window.organiz) {
     const pasta = window.organiz.getPasta(pastaId)
@@ -113,6 +128,7 @@ function updatePreview() {
   }
 }
 
+// Criar tarefa
 function criarTarefa() {
   if (!window.organiz) return
 
@@ -122,6 +138,7 @@ function criarTarefa() {
   const prioridade = document.getElementById("tarefa-prioridade").value
   const pastaId = document.getElementById("tarefa-pasta").value
 
+  // Validação
   if (!titulo) {
     alert("Por favor, preencha o título da tarefa.")
     document.getElementById("tarefa-titulo").focus()
@@ -147,6 +164,7 @@ function criarTarefa() {
 
   try {
     if (pastaId) {
+      // Adicionar à pasta específica
       const pasta = window.organiz.getPasta(pastaId)
       if (pasta) {
         if (!pasta.tarefas) pasta.tarefas = []
@@ -154,6 +172,7 @@ function criarTarefa() {
         window.organiz.updatePasta(pastaId, { tarefas: pasta.tarefas })
       }
     } else {
+      // Criar pasta especial para tarefas independentes
       let pastaIndependente = window.organiz.getAllPastas().find((p) => p.id === "independente")
 
       if (!pastaIndependente) {
@@ -172,6 +191,7 @@ function criarTarefa() {
 
     window.organiz.showNotification("Tarefa criada com sucesso!", "success")
 
+    // Redirecionar para a página principal
     setTimeout(() => {
       window.location.href = "index.html"
     }, 1000)
@@ -181,6 +201,7 @@ function criarTarefa() {
   }
 }
 
+// Atualizar nome do usuário
 function updateUserName() {
   const userData = localStorage.getItem("organiz-user")
   if (userData) {

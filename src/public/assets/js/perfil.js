@@ -1,9 +1,18 @@
-
 let currentUser = null
+
+function getBaseURL() {
+  if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+    return "http://localhost:3000/api"
+  } else {
+    return "https://two025-1-p1-tiaw-organiz.onrender.com/api"
+  }
+}
+
+const API_BASE_URL = getBaseURL()
 
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("Carregando página de perfil...")
-
+  console.log("🌐 URL da API:", API_BASE_URL)
 
   let attempts = 0
   const maxAttempts = 50
@@ -25,7 +34,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 })
 
-
 async function loadUserProfile() {
   const userData = localStorage.getItem("organiz-user")
   if (!userData) {
@@ -36,38 +44,32 @@ async function loadUserProfile() {
   currentUser = JSON.parse(userData)
 
   try {
-    
-    const response = await fetch(`http://localhost:3000/api/user/${currentUser.id}/profile`)
+    const response = await fetch(`${API_BASE_URL}/user/${currentUser.id}/profile`)
     const result = await response.json()
 
     if (result.success) {
       currentUser = result.usuario
-      
       localStorage.setItem("organiz-user", JSON.stringify(currentUser))
       displayUserProfile()
     } else {
       console.error("Erro ao carregar perfil:", result.message)
-      displayUserProfile() 
+      displayUserProfile()
     }
   } catch (error) {
     console.error("Erro ao conectar com servidor:", error)
-    displayUserProfile() 
+    displayUserProfile()
   }
 }
 
-
 function displayUserProfile() {
-  
   document.getElementById("perfil-nome").textContent = currentUser.nome
   document.getElementById("perfil-email").textContent = currentUser.email
 
-  
   if (currentUser.createdAt) {
     const dataCriacao = new Date(currentUser.createdAt).getFullYear()
     document.getElementById("perfil-data-criacao").textContent = dataCriacao
   }
 
-  
   if (currentUser.fotoPerfil) {
     const fotoImg = document.getElementById("foto-perfil-img")
     const fotoPlaceholder = document.getElementById("foto-placeholder")
@@ -76,7 +78,6 @@ function displayUserProfile() {
     fotoPlaceholder.style.display = "none"
   }
 
-  
   document.getElementById("perfil-nome-input").value = currentUser.nome || ""
   document.getElementById("perfil-email-input").value = currentUser.email || ""
   document.getElementById("perfil-telefone").value = currentUser.telefone || ""
@@ -131,7 +132,6 @@ function handleFotoUpload(event) {
     fotoImg.style.display = "block"
     fotoPlaceholder.style.display = "none"
 
-    // Salvar temporariamente
     currentUser.fotoPerfil = e.target.result
   }
 
@@ -180,7 +180,7 @@ async function salvarPerfil() {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Salvando...'
     submitBtn.disabled = true
 
-    const response = await fetch(`http://localhost:3000/api/user/${currentUser.id}/profile`, {
+    const response = await fetch(`${API_BASE_URL}/user/${currentUser.id}/profile`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
