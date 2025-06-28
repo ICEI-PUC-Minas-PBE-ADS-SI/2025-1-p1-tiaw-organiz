@@ -220,3 +220,4 @@ function updateUserName() {
     userNameElement.textContent = currentUser.nome || currentUser.email
   }
 }
+
