@@ -1,4 +1,4 @@
-
+// JavaScript específico para detalhes da pasta
 let currentPasta = null
 let currentPastaId = null
 let editingDiarioId = null
@@ -7,7 +7,7 @@ const bootstrap = window.bootstrap
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("Carregando detalhes da pasta...")
 
-
+  // Obter ID da pasta da URL
   const urlParams = new URLSearchParams(window.location.search)
   currentPastaId = urlParams.get("id")
 
@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   console.log("ID da pasta:", currentPastaId)
 
-  
   let attempts = 0
   const maxAttempts = 50
 
@@ -39,25 +38,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 })
 
-
 function setupEventListeners() {
   updateUserName()
-
 
   const imageInput = document.getElementById("image-input")
   imageInput.addEventListener("change", handleImageUpload)
 
-
   const today = new Date().toISOString().split("T")[0]
   document.getElementById("tarefa-data").value = today
 
-  
   document.getElementById("diarioModal").addEventListener("hidden.bs.modal", limparFormularioDiario)
   document.getElementById("notaModal").addEventListener("hidden.bs.modal", () => {
     document.getElementById("nota-content").value = ""
   })
 }
-
 
 function loadPastaDetails() {
   if (!window.organiz || !currentPastaId) return
@@ -72,7 +66,6 @@ function loadPastaDetails() {
 
   renderPastaDetails()
 }
-
 
 function renderPastaDetails() {
   const container = document.getElementById("pasta-content")
@@ -195,7 +188,7 @@ function renderPastaDetails() {
     `
 }
 
-
+// Renderizar diário
 function renderDiario() {
   if (!currentPasta.diario || currentPasta.diario.length === 0) {
     return `
@@ -210,7 +203,6 @@ function renderDiario() {
             </div>
         `
   }
-
 
   const entradasOrdenadas = [...currentPasta.diario].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
 
@@ -254,7 +246,7 @@ function renderDiario() {
     .join("")
 }
 
-
+// Renderizar notas rápidas
 function renderNotas() {
   if (!currentPasta.notas || currentPasta.notas.length === 0) {
     return '<p class="text-muted">Nenhuma nota adicionada ainda.</p>'
@@ -281,7 +273,7 @@ function renderNotas() {
     .join("")
 }
 
-
+// Renderizar imagens
 function renderImagens() {
   if (!currentPasta.imagens || currentPasta.imagens.length === 0) {
     return '<p class="text-muted">Nenhuma imagem adicionada ainda.</p>'
@@ -305,7 +297,7 @@ function renderImagens() {
     .join("")
 }
 
-
+// Renderizar tarefas
 function renderTarefas() {
   if (!currentPasta.tarefas || currentPasta.tarefas.length === 0) {
     return '<p class="text-muted">Nenhuma tarefa adicionada ainda.</p>'
@@ -340,7 +332,7 @@ function renderTarefas() {
     .join("")
 }
 
-
+// Salvar entrada do diário
 function salvarEntradaDiario() {
   const titulo = document.getElementById("diario-titulo").value.trim()
   const conteudo = document.getElementById("diario-conteudo").value.trim()
@@ -369,50 +361,50 @@ function salvarEntradaDiario() {
   }
 
   if (editingDiarioId) {
-    
+    // Editar entrada existente
     const index = currentPasta.diario.findIndex((e) => e.id === editingDiarioId)
     if (index !== -1) {
       currentPasta.diario[index] = entradaData
     }
     editingDiarioId = null
   } else {
-    
+    // Nova entrada
     currentPasta.diario.push(entradaData)
   }
 
   window.organiz.updatePasta(currentPastaId, { diario: currentPasta.diario })
 
-  
+  // Limpar modal e fechar
   limparFormularioDiario()
   bootstrap.Modal.getInstance(document.getElementById("diarioModal")).hide()
 
-  
+  // Recarregar detalhes
   loadPastaDetails()
   window.organiz.showNotification("Entrada do diário salva com sucesso!", "success")
 }
 
-
+// Editar entrada do diário
 function editarEntradaDiario(entradaId) {
   const entrada = currentPasta.diario.find((e) => e.id === entradaId)
   if (!entrada) return
 
- 
+  // Preencher formulário
   document.getElementById("diario-titulo").value = entrada.titulo
   document.getElementById("diario-conteudo").value = entrada.conteudo
   document.getElementById("diario-humor").value = entrada.humor || ""
   document.getElementById("diario-categoria").value = entrada.categoria || "pessoal"
 
-  
+  // Configurar modal para edição
   document.getElementById("diario-modal-title").textContent = "Editar Entrada do Diário"
   document.getElementById("btn-salvar-diario").textContent = "Salvar Alterações"
 
   editingDiarioId = entradaId
 
-  
+  // Abrir modal
   new bootstrap.Modal(document.getElementById("diarioModal")).show()
 }
 
-
+// Remover entrada do diário
 function removerEntradaDiario(entradaId) {
   if (!confirm("Tem certeza que deseja remover esta entrada do diário?")) return
 
@@ -422,7 +414,7 @@ function removerEntradaDiario(entradaId) {
   window.organiz.showNotification("Entrada do diário removida!", "success")
 }
 
-
+// Filtrar diário por categoria
 function filtrarDiario() {
   const filtro = document.getElementById("filtro-diario").value
   const entradas = document.querySelectorAll(".entrada-diario")
@@ -437,21 +429,21 @@ function filtrarDiario() {
   })
 }
 
-
+// Limpar formulário do diário
 function limparFormularioDiario() {
   document.getElementById("diario-titulo").value = ""
   document.getElementById("diario-conteudo").value = ""
   document.getElementById("diario-humor").value = ""
   document.getElementById("diario-categoria").value = "pessoal"
 
-  
+  // Resetar modal para modo de criação
   document.getElementById("diario-modal-title").textContent = "Nova Entrada no Diário"
   document.getElementById("btn-salvar-diario").textContent = "Salvar Entrada"
 
   editingDiarioId = null
 }
 
-
+// Salvar nota rápida
 function salvarNota() {
   const conteudo = document.getElementById("nota-content").value.trim()
 
@@ -473,15 +465,15 @@ function salvarNota() {
   currentPasta.notas.push(novaNota)
   window.organiz.updatePasta(currentPastaId, { notas: currentPasta.notas })
 
-  
+  // Limpar modal e fechar
   document.getElementById("nota-content").value = ""
   bootstrap.Modal.getInstance(document.getElementById("notaModal")).hide()
 
- 
+  // Recarregar detalhes
   loadPastaDetails()
 }
 
-
+// Salvar tarefa
 function salvarTarefa() {
   const titulo = document.getElementById("tarefa-titulo").value.trim()
   const descricao = document.getElementById("tarefa-descricao").value.trim()
@@ -511,29 +503,29 @@ function salvarTarefa() {
   currentPasta.tarefas.push(novaTarefa)
   window.organiz.updatePasta(currentPastaId, { tarefas: currentPasta.tarefas })
 
- 
+  // Limpar modal e fechar
   document.getElementById("tarefa-titulo").value = ""
   document.getElementById("tarefa-descricao").value = ""
   document.getElementById("tarefa-data").value = new Date().toISOString().split("T")[0]
   document.getElementById("tarefa-prioridade").value = "media"
   bootstrap.Modal.getInstance(document.getElementById("tarefaModal")).hide()
 
-  
+  // Recarregar detalhes
   loadPastaDetails()
 }
 
-
+// Upload de imagem
 function handleImageUpload(event) {
   const file = event.target.files[0]
   if (!file) return
 
-
+  // Verificar se é uma imagem
   if (!file.type.startsWith("image/")) {
     alert("Por favor, selecione apenas arquivos de imagem.")
     return
   }
 
-
+  // Verificar tamanho (máximo 5MB)
   if (file.size > 5 * 1024 * 1024) {
     alert("A imagem deve ter no máximo 5MB.")
     return
@@ -555,14 +547,14 @@ function handleImageUpload(event) {
     currentPasta.imagens.push(novaImagem)
     window.organiz.updatePasta(currentPastaId, { imagens: currentPasta.imagens })
 
-   
+    // Recarregar detalhes
     loadPastaDetails()
   }
 
   reader.readAsDataURL(file)
 }
 
-
+// Remover nota
 function removerNota(notaId) {
   if (!confirm("Tem certeza que deseja remover esta nota?")) return
 
@@ -571,7 +563,7 @@ function removerNota(notaId) {
   loadPastaDetails()
 }
 
-
+// Remover imagem
 function removerImagem(imagemId) {
   if (!confirm("Tem certeza que deseja remover esta imagem?")) return
 
@@ -580,7 +572,7 @@ function removerImagem(imagemId) {
   loadPastaDetails()
 }
 
-
+// Remover tarefa
 function removerTarefa(tarefaId) {
   if (!confirm("Tem certeza que deseja remover esta tarefa?")) return
 
@@ -589,7 +581,7 @@ function removerTarefa(tarefaId) {
   loadPastaDetails()
 }
 
-
+// Toggle tarefa
 function toggleTarefa(tarefaId) {
   const tarefa = currentPasta.tarefas.find((t) => t.id === tarefaId)
   if (tarefa) {
@@ -599,7 +591,7 @@ function toggleTarefa(tarefaId) {
   }
 }
 
-
+// Funções auxiliares
 function getHumorEmoji(humor) {
   const humores = {
     "muito-feliz": "😄",
@@ -660,7 +652,7 @@ function getPrioridadeText(prioridade) {
   return textos[prioridade] || "Média"
 }
 
-
+// Utilitários
 function formatDate(dateString) {
   return new Date(dateString).toLocaleDateString("pt-BR")
 }

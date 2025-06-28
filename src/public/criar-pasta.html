@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Pasta - OrganiZ</title>
     
-    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+    <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Header -->
     <header class="header-organiz">
         <div class="container">
             <div class="row align-items-center">
@@ -42,10 +42,10 @@
         </div>
     </header>
 
-    
+    <!-- Main Content -->
     <main class="container my-5">
         <div class="row g-4">
-            
+            <!-- Preview Visual -->
             <div class="col-lg-5">
                 <div class="bg-dark rounded-3 p-5 d-flex align-items-center justify-content-center" style="min-height: 400px;">
                     <div id="pasta-preview" class="text-center p-5 rounded-3" style="background-color: #8000FF; min-width: 300px; min-height: 200px; display: flex; align-items: center; justify-content: center;">
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-           
+            <!-- Formulário -->
             <div class="col-lg-7">
                 <div class="card-organiz card-dark p-4">
                     <h2 id="form-title" class="text-white mb-4">
@@ -63,7 +63,7 @@
                     </h2>
 
                     <form id="pasta-form" class="form-organiz">
-                        
+                        <!-- Nome -->
                         <div class="mb-4">
                             <label for="pasta-nome" class="form-label text-white fw-bold">
                                 <i class="fas fa-tag me-2"></i>
@@ -76,7 +76,7 @@
                                    required>
                         </div>
 
-                      
+                        <!-- Cor -->
                         <div class="mb-4">
                             <label for="pasta-cor" class="form-label text-white fw-bold">
                                 <i class="fas fa-palette me-2"></i>
@@ -98,7 +98,7 @@
                             </div>
                         </div>
 
-               
+                        <!-- Descrição -->
                         <div class="mb-4">
                             <label for="pasta-descricao" class="form-label text-white fw-bold">
                                 <i class="fas fa-align-left me-2"></i>
@@ -110,7 +110,7 @@
                                       placeholder="Descreva o que você vai organizar nesta pasta..."></textarea>
                         </div>
 
-                        
+                        <!-- Botões -->
                         <div class="d-flex gap-3">
                             <button type="submit" class="btn btn-organiz flex-fill">
                                 <i class="fas fa-save me-2"></i>
@@ -127,15 +127,15 @@
         </div>
     </main>
 
- 
+    <!-- Fixed Buttons -->
     <a href="pastas.html" class="btn btn-organiz fixed-btn fixed-btn-left">
         <i class="fas fa-arrow-left me-2"></i>
         Voltar
     </a>
 
-   
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <!-- Custom JS -->
     <script src="assets/js/app.js"></script>
     <script src="assets/js/criar-pasta.js"></script>
 </body>
