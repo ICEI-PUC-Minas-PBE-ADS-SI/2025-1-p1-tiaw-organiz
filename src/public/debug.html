@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - OrganiZ</title>
+    <style>
+        body { font-family: monospace; padding: 20px; background: #1a1a1a; color: #00ff00; }
+        .status { margin: 10px 0; padding: 10px; border: 1px solid #333; }
+        .ok { border-color: #00ff00; }
+        .error { border-color: #ff0000; color: #ff0000; }
+        .warning { border-color: #ffff00; color: #ffff00; }
+        button { background: #333; color: #00ff00; border: 1px solid #00ff00; padding: 10px; margin: 5px; cursor: pointer; }
+        .console-log { background: #222; padding: 10px; margin: 10px 0; border-left: 3px solid #00ff00; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <h1>🔧 OrganiZ Debug</h1>
+    <div id="debug-info"></div>
+    
+    <button onclick="testOrganiZ()">🧪 Testar OrganiZ</button>
+    <button onclick="forceCreateOrganiZ()">🔨 Forçar Criação</button>
+    <button onclick="clearStorage()">🗑️ Limpar Storage</button>
+    <button onclick="location.reload()">🔄 Recarregar</button>
+    
+    <div id="console-logs" class="console-log">
+        <strong>📋 Console Logs:</strong><br>
+        <div id="log-content"></div>
+    </div>
+    
+    <!-- IMPORTANTE: Incluir o script do app.js -->
+    <script src="assets/js/app.js"></script>
+    
+    <script>
+        // Capturar logs do console
+        const originalLog = console.log;
+        const originalError = console.error;
+        const logContent = document.getElementById('log-content');
+        
+        function addLog(message, type = 'log') {
+            const div = document.createElement('div');
+            div.style.color = type === 'error' ? '#ff0000' : '#00ff00';
+            div.textContent = new Date().toLocaleTimeString() + ' - ' + message;
+            logContent.appendChild(div);
+            logContent.scrollTop = logContent.scrollHeight;
+        }
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            addLog(args.join(' '), 'log');
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            addLog('ERROR: ' + args.join(' '), 'error');
+        };
+        
+        async function runDebug() {
+            const debugInfo = document.getElementById('debug-info');
+            let html = '';
+            
+            // 1. Verificar servidor
+            html += '<div class="status">🌐 Testando conexão com servidor...</div>';
+            try {
+                const response = await fetch('http://localhost:3000/api/user/test/data');
+                if (response.ok || response.status === 404) {
+                    html += '<div class="status ok">✅ Servidor está rodando</div>';
+                } else {
+                    html += '<div class="status error">❌ Servidor retornou erro: ' + response.status + '</div>';
+                }
+            } catch (error) {
+                html += '<div class="status error">❌ Servidor não está acessível: ' + error.message + '</div>';
+            }
+            
+            // 2. Verificar localStorage
+            const userData = localStorage.getItem('organiz-user');
+            if (userData) {
+                try {
+                    const user = JSON.parse(userData);
+                    html += '<div class="status ok">✅ Usuário logado: ' + user.nome + '</div>';
+                } catch (error) {
+                    html += '<div class="status error">❌ Dados de usuário corrompidos</div>';
+                }
+            } else {
+                html += '<div class="status warning">⚠️ Nenhum usuário logado</div>';
+            }
+            
+            // 3. Verificar scripts
+            if (window.OrganiZ) {
+                html += '<div class="status ok">✅ Classe OrganiZ carregada</div>';
+            } else {
+                html += '<div class="status error">❌ Classe OrganiZ não encontrada</div>';
+            }
+            
+            if (window.organiz) {
+                html += '<div class="status ok">✅ Instância organiz criada</div>';
+                if (window.organiz.isInitialized) {
+                    html += '<div class="status ok">✅ OrganiZ inicializado</div>';
+                } else {
+                    html += '<div class="status warning">⚠️ OrganiZ não inicializado</div>';
+                }
+            } else {
+                html += '<div class="status error">❌ Instância organiz não encontrada</div>';
+            }
+            
+            // 4. Verificar arquivos
+            html += '<div class="status">📁 Verificando arquivos...</div>';
+            try {
+                const appJsResponse = await fetch('assets/js/app.js');
+                if (appJsResponse.ok) {
+                    html += '<div class="status ok">✅ app.js encontrado</div>';
+                } else {
+                    html += '<div class="status error">❌ app.js não encontrado (status: ' + appJsResponse.status + ')</div>';
+                }
+            } catch (error) {
+                html += '<div class="status error">❌ Erro ao carregar app.js: ' + error.message + '</div>';
+            }
+            
+            debugInfo.innerHTML = html;
+        }
+        
+        function testOrganiZ() {
+            console.log('🧪 Testando OrganiZ...');
+            if (window.organiz) {
+                window.organiz.debug();
+                alert('✅ OrganiZ funcionando! Veja o console (F12)');
+            } else {
+                alert('❌ OrganiZ não encontrado!');
+            }
+        }
+        
+        function forceCreateOrganiZ() {
+            console.log('🔨 Forçando criação do OrganiZ...');
+            try {
+                if (window.OrganiZ) {
+                    window.organiz = new window.OrganiZ();
+                    console.log('✅ OrganiZ criado manualmente!');
+                    setTimeout(runDebug, 2000);
+                } else {
+                    console.error('❌ Classe OrganiZ não disponível');
+                }
+            } catch (error) {
+                console.error('❌ Erro ao criar OrganiZ:', error);
+            }
+        }
+        
+        function clearStorage() {
+            localStorage.clear();
+            alert('🗑️ Storage limpo! Recarregando...');
+            location.reload();
+        }
+        
+        // Aguardar um pouco antes de executar o debug
+        setTimeout(runDebug, 2000);
+        
+        // Verificar se o DOMContentLoaded está funcionando
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('📄 DOMContentLoaded disparado');
+        });
+        
+        // Verificar se há erros globais
+        window.addEventListener('error', (event) => {
+            console.error('🚨 Erro global capturado:', event.error);
+        });
+    </script>
+</body>
+</html>
