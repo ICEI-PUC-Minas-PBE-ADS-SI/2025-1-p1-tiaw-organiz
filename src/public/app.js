@@ -53,3 +53,4 @@ botaoSalvar.addEventListener('click', async function () {
 
   window.location.href = 'pastas.html';
 });
+

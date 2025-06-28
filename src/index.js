@@ -300,3 +300,4 @@ app.listen(PORT, () => {
   console.log(`🚀 Servidor OrganiZ rodando em http://localhost:${PORT}`)
   console.log(`📁 Banco de dados: ${DB_PATH}`)
 })
+
