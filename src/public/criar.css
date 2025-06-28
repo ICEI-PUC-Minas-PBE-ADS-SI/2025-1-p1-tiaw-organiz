@@ -1,0 +1,157 @@
+/*Cabeçalho*/
+.header
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8000FF;
+}
+
+.header h1
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    padding-left: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.header img
+{
+    width: 60px;
+    height: 60px;
+    padding-right: 30px;
+}
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*Colunas*/
+.criar
+{
+    display: flex;
+    height: 100%;
+}
+
+.visual
+{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.infopasta
+{
+    width: 60%;
+    height: 100%;
+}
+
+/*Lado esquerdo*/
+.quadrado
+{
+    border-radius: 20px;
+    width: 528px;
+    height: 293px;
+    background-color: #8000FF;
+    
+    margin-top: 216px;
+    margin-left: 96px;
+}
+
+.quadrado h1
+{
+    text-align: center;
+    padding-top: 146px;
+}
+
+.visual button
+{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+
+
+    background-color: #8000FF;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Lado direito*/
+.infopasta
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-left: 20px;
+    gap: 1px;
+}
+
+.infopasta input
+{
+    border: none;
+    background-color: rgb(221, 215, 215);
+    color: black;
+    border-radius: 20px;
+}
+
+.inputnome
+{
+    width: 20%;
+    height: 20px;
+    padding: 5px;
+}
+
+.inputdes
+{
+    width: 70%;
+    height: 30%;
+    padding: 10px;
+    resize: none;
+    border-radius: 20px;
+    background-color: rgb(221, 215, 215);
+    color: black;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.selectcor {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.cor-preview {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid #00000033;
+    background-color: #8000FF;
+}
+
+.infopasta button
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+
+
+    background-color: #8000FF;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}

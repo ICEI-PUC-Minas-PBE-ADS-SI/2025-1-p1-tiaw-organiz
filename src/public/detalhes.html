@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes da Pasta</title>
+    <link rel="stylesheet" href="detalhes.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 onclick="window.location.href='index.html'">OrganiZ</h1>
+        <img src="images/usuário.png" alt="login">
+    </div>
+
+    <div class="detalhes" id="detalhes-pasta">
+        <h1>Detalhes da Pasta</h1>
+        <div class="cor-preview" id="preview-cor" style="width: 50px; height: 50px; border-radius: 8px;"></div>
+        <h2 id="nome-pasta">Nome</h2>
+        <p id="descricao-pasta">Descrição</p>
+
+        <div class="adicionar">
+            <button class="nota" id="btn-nota">Adicionar nota</button>
+            <button class="imagem" id="btn-imagem">Adicionar imagem</button>
+            <button class="evento" onclick="window.location.href='index.html'">Adicionar evento no calendário</button>
+        </div>
+
+        <div class="eventoadicionado" id="eventoadicionado">
+            <!-- Notas e imagens aparecem aqui -->
+        </div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        const eventContainer = document.getElementById("eventoadicionado");
+
+        async function obterPasta(id) {
+            const resposta = await fetch(`http://localhost:3000/pastas/${id}`);
+            return resposta.ok ? resposta.json() : null;
+        }
+
+        async function atualizarPasta(id, dados) {
+            await fetch(`http://localhost:3000/pastas/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dados)
+            });
+        }
+
+        async function carregarDetalhes() {
+            const pasta = await obterPasta(id);
+
+            if (pasta) {
+                document.getElementById('nome-pasta').textContent = pasta.nome;
+                document.getElementById('descricao-pasta').textContent = pasta.descricao;
+                document.getElementById('preview-cor').style.backgroundColor = pasta.cor;
+
+                (pasta.notas ?? []).forEach(nota => adicionarNotaSalva(nota.conteudo));
+                (pasta.imagens ?? []).forEach(imagem => adicionarImagemSalva(imagem.base64));
+            } else {
+                document.getElementById('detalhes-pasta').innerHTML = "<p>Pasta não encontrada.</p>";
+            }
+        }
+
+        document.getElementById('btn-nota').addEventListener('click', () => {
+            const textarea = document.createElement('textarea');
+            textarea.placeholder = "Digite sua nota aqui...";
+            textarea.style.display = 'block';
+            textarea.style.marginTop = '10px';
+
+            const salvar = document.createElement('button');
+            salvar.textContent = "Salvar nota";
+            salvar.style.marginBottom = '20px';
+
+            salvar.onclick = async () => {
+                const texto = textarea.value.trim();
+                if (texto) {
+                    const pasta = await obterPasta(id);
+                    const novaNota = { id: Date.now(), conteudo: texto };
+                    pasta.notas = pasta.notas ?? [];
+                    pasta.notas.push(novaNota);
+                    await atualizarPasta(id, pasta);
+                    adicionarNotaSalva(texto);
+                    textarea.remove();
+                    salvar.remove();
+                }
+            };
+
+            eventContainer.appendChild(textarea);
+            eventContainer.appendChild(salvar);
+        });
+
+        document.getElementById('btn-imagem').addEventListener('click', () => {
+            const input = document.createElement('input');
+            input.type = "file";
+            input.accept = "image/*";
+            input.onchange = async () => {
+                const file = input.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = async () => {
+                        const base64 = reader.result;
+                        const pasta = await obterPasta(id);
+                        const novaImagem = { id: Date.now(), base64 };
+                        pasta.imagens = pasta.imagens ?? [];
+                        pasta.imagens.push(novaImagem);
+                        await atualizarPasta(id, pasta);
+                        adicionarImagemSalva(base64);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+            input.click();
+        });
+
+        function adicionarNotaSalva(texto) {
+            const p = document.createElement('p');
+            p.textContent = texto;
+            p.style.marginTop = '10px';
+            p.style.background = '#f2f2f2';
+            p.style.padding = '10px';
+            p.style.borderRadius = '8px';
+            eventContainer.appendChild(p);
+        }
+
+        function adicionarImagemSalva(base64) {
+            const img = document.createElement('img');
+            img.src = base64;
+            img.style.maxWidth = '200px';
+            img.style.marginTop = '10px';
+            img.style.borderRadius = '8px';
+            eventContainer.appendChild(img);
+        }
+
+        carregarDetalhes();
+    </script>
+
+
+    <button class="voltar" onclick="window.location.href='pastas.html'">Voltar</button>
+</body>
+
+</html>
