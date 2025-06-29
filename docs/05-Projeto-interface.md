@@ -73,4 +73,4 @@ Este protótipo oferece um ambiente dinâmico onde é possível testar o fluxo d
 
 Por meio do protótipo, o usuário pode navegar entre as diferentes telas e testar os principais recursos da plataforma, simulando a experiência real de uso.
 
-[Protótipo interativo] (https://www.figma.com/design/ySIDRrHpAX1edOHvrDIYEr/OrganiZ?node-id=15-3&t=i6rGFGOrra1vytaN-1).
+[Protótipo interativo](https://www.figma.com/design/ySIDRrHpAX1edOHvrDIYEr/OrganiZ?node-id=15-3&t=i6rGFGOrra1vytaN-1).
