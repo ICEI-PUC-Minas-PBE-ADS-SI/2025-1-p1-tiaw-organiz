@@ -2,7 +2,7 @@
 
 
 
-✅ [Documentação de Design Thinking (MIRO)](files/processo-dt.pdf)
+- [Documentação de Design Thinking (MIRO)](files/processo-dt.pdf)
 
 ## Etapa de entendimento
 
