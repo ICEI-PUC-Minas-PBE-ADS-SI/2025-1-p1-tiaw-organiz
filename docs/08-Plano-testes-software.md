@@ -36,5 +36,13 @@ Por exemplo:
 | Critério de êxito | - Pasta criada com sucesso. |
 | Responsável pela elaboração do caso de teste |Paulo Henrique Vaz Coelho |
 
+| **Caso de teste**  | **CT-004 – Criação de tarefas**  |
+|:---: |:---: |
+| Requisito associado |RF-00X - Verificar se o usuário consegue criar uma nova tarefa com sucesso. |
+| Objetivo do teste | O usuário conseguir criar uma pasta. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://two025-1-p1-tiaw-organiz.onrender.com/index.html --Localizar a opção de "Criar Tarefa" <br> - Clicar em "Criar Tarefa" <br> -- Preencher os campos: nome, descrição e data de entrega. <br> - Confirmar a criação clicando no botão correspondente | |
+| Critério de êxito | - Tarefa criada com sucesso. |
+| Responsável pela elaboração do caso de teste |Paulo Henrique Vaz Coelho |
+
 
 
