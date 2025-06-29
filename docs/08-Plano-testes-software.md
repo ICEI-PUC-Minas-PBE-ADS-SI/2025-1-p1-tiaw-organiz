@@ -44,5 +44,11 @@ Por exemplo:
 | Critério de êxito | - Tarefa criada com sucesso. |
 | Responsável pela elaboração do caso de teste |Paulo Henrique Vaz Coelho |
 
-
+| **Caso de teste**  | **CT-004 – Criação de metas**  |
+|:---: |:---: |
+| Requisito associado |RF-00X - Verificar se o usuário consegue criar uma nova meta com sucesso. |
+| Objetivo do teste | O usuário conseguir criar uma meta. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://two025-1-p1-tiaw-organiz.onrender.com/index.html --LLocalizar a seção ou botão "Criar Meta" <br> - Clicar em "Criar meta" <br> -- Preencher os campos: título, descrição e ícone. <br> - Confirmar a criação clicando no botão correspondente | |
+| Critério de êxito | - Meta criada com sucesso. |
+| Responsável pela elaboração do caso de teste |Paulo Henrique Vaz Coelho |
 
