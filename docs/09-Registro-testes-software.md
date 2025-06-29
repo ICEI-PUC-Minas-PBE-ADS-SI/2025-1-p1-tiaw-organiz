@@ -19,12 +19,14 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/login.html |
 
 
-> **Links úteis**:
-> - [Screencast: entenda o que é e como gravar vídeos com ele](https://rockcontent.com/br/blog/screencast/) 
 
 ## Avaliação
 
-Discorra sobre os resultados do teste, ressaltando os pontos fortes e fracos identificados na solução. Comente como o grupo pretende abordar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Interface simples e de fácil navegação.
+Sistema estável, sem travamentos.
+Feedback visual imediato após ações (ex: tarefa marcada como concluída).
+Funcionalidade de busca eficiente.
+Integração com calendário.
+Organização por categorias, cores ou prioridades.
+Alertas ou lembretes com notificação visual.
 
-> **Links úteis**:
-> - [Ferramentas de Teste para JavaScript](https://geekflare.com/javascript-unit-testing/)
