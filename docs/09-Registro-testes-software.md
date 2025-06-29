@@ -23,10 +23,16 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 ## Avaliação
 
 Interface simples e de fácil navegação.
+
 Sistema estável, sem travamentos.
+
 Feedback visual imediato após ações (ex: tarefa marcada como concluída).
+
 Funcionalidade de busca eficiente.
+
 Integração com calendário.
+
 Organização por categorias, cores ou prioridades.
+
 Alertas ou lembretes com notificação visual.
 
