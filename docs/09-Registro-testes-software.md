@@ -8,8 +8,12 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
+| Requisito associado | ![image](https://github.com/user-attachments/assets/8b2525d3-6fb3-42d8-b53a-698f41b1d595)|
+| Requisito associado | ![image](https://github.com/user-attachments/assets/e5f1af95-bfef-4998-b067-87a5a0038dae)|
+| Requisito associado | ![image](https://github.com/user-attachments/assets/0262bdda-7f4c-4f38-aae0-7e0359ce9b9c)|
+| Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/perfil.html|
+
+
 
 | **Caso de teste** 	| **CT-002 – Realizar login** 	|
 |:---:	|:---:	|
