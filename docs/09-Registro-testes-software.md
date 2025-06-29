@@ -42,6 +42,12 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 https://github.com/user-attachments/assets/628d537c-10e5-4a26-a34d-51c6ce8f4fb3
 
 
+https://github.com/user-attachments/assets/a237161d-f47b-439a-9a6a-567e3d2631ec
+
+
+https://github.com/user-attachments/assets/3877d488-2d4c-45cb-b67b-658713b75638
+
+
 
 ## Avaliação
 
