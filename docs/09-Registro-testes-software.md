@@ -20,6 +20,14 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 
 
+## Vídeo 
+
+
+
+https://github.com/user-attachments/assets/628d537c-10e5-4a26-a34d-51c6ce8f4fb3
+
+
+
 ## Avaliação
 
 Interface simples e de fácil navegação.
