@@ -42,6 +42,7 @@ Permite a inclusão de novos usuários.
   * Se ainda não possuir conta, clique em "Cadastrar-se";
   * Preencha os dados obrigatórios no formulário de cadastro de usuário;
   * Após o cadastro, o usuário deve realizar o login manualmente.
+    
 * **Tela da funcionalidade**:
 
 ![image](https://github.com/user-attachments/assets/688d11ba-c126-4b82-a2cc-aea45e7c828c)
@@ -57,11 +58,68 @@ Permite que o usuário crie novas tarefas, vinculando-as a uma pasta ou data esp
   * Na tela inicial, Clique no botão “Criar Tarefa” ou ícone de "+";
   * Preencha os campos obrigatórios;
   * Clique em “Criar tarefa” para registrar a tarefa.
+    
 * **Tela da funcionalidade**:
 
 ![image](https://github.com/user-attachments/assets/e2e50bfa-54f5-4e82-a9f7-7d3c1cf7e6f4)
 
 
+##### Funcionalidade 3 - Criação de pastas
+
+Permite ao usuário criar novas pastas para organizar suas tarefas de forma personalizada. Cada pasta pode agrupar diversas tarefas relacionadas, facilitando a organização e a categorização.
+
+
+* **Estrutura de dados:** [Pastas](#estrutura-de-dados---Pastas)
+  
+* **Instruções de acesso:**
+  * Faça login no sistema;
+  * Na tela inicial, Clique no botão “Criar Pasta”;
+  * Preencha os campos obrigatórios;
+  * Clique em “Criar pasta” para registrar a nova pasta;
+  * A pasta aparecerá na listagem e poderá ser usada para agrupar tarefas, escrever no diário, nota rápida e adição de imagem.
+    
+* **Tela da funcionalidade**:
+
+![image](https://github.com/user-attachments/assets/7a462e83-d1e3-4fd1-b090-11e1e9885a9c)
+
+
+##### Funcionalidade 4 - Planejamento de metas
+
+Permite ao usuário criar e gerenciar metas relacionadas às suas tarefas, ajudando no acompanhamento de objetivos e organização pessoal.
+
+
+* **Estrutura de dados:** [Metas](#estrutura-de-dados---Metas)
+  
+* **Instruções de acesso:**
+  * Faça login no sistema;
+  * No menu lateral esquerdo, clique no botão “Metas”;
+  * A interface irá exibir a lista de metas existentes e um botão para “Adicionar Meta”;
+  * Ao clicar em “Adicionar Meta”, preencha os dados obrigatórios;
+  * A pasta aparecerá na listagem e poderá ser usada para agrupar tarefas, escrever no diário, nota rápida e adição de imagem.
+  * Clique em “Salvar Meta” para concluir;
+  * As metas criadas poderão ser consultadas, editadas ou excluídas a qualquer momento.
+    
+* **Tela da funcionalidade**:
+
+![image](https://github.com/user-attachments/assets/d2c4bdfc-ac0b-483f-b286-cbe4bc0cdbff)
+
+
+##### Funcionalidade 5 - Calendário interativo
+
+Exibe um calendário com as tarefas cadastradas em suas respectivas datas. O usuário pode visualizar rapidamente os compromissos e prazos organizados de forma visual e interativa.
+
+
+* **Estrutura de dados:** [Metas](#estrutura-de-dados---Metas)
+  
+* **Instruções de acesso:**
+  * Faça login no sistema;
+  * Vá até a tela inicial;
+  * O calendário é exibido na parte inferior da tela;
+  * Se existir alguma tarefa cadastrada, o calendário mostrará o nome da tarefa e o nível de prioridade dela.
+    
+* **Tela da funcionalidade**:
+  
+![image](https://github.com/user-attachments/assets/c5f3df0a-9742-4253-9a81-8e66da2aeea1)
 
 ### Estruturas de dados
 
