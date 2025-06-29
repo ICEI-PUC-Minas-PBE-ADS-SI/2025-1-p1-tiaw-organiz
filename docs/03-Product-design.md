@@ -50,19 +50,19 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 | ------ | ---------------------------------------------------------- | ---------- |
 | RF-001 |Cadastro e login | ALTA       |
 | RF-002 |Criação e gerenciamento de tarefas  | ALTA   |
-| RF-003 |Lembretes e notificações | ALTA     |
+| RF-003 |Lembretes e notificações | BAIXA     |
 | RF-004 |Organização de documentos e anotações  | ALTA     |
-| RF-005 |Agenda e calendário integrado | MÉDIA     |
-| RF-006 |Sugestões de organização | MÉDIA     |
-| RF-007 |Relatórios de produtividade| BAIXA     |
-| RF-008 |Modo foco e gestão de tempo | MÉDIA     |
+| RF-005 |Agenda e calendário integrado | ALTA     |
+| RF-006 |Sugestões de organização | BAIXA    |
+| RF-007 |Checklist de tarefas concluídas | MÉDIA    |
+| RF-008 |Modo foco e gestão de tempo | BAIXA     |
 | RF-009 |Compartilhamento de tarefas e projetos| BAIXA     |
-| RF-010 |Sincronização com outras plataformas| MÉDIA     |
-| RF-011 |Calendário| ALTA     |
+| RF-010 |Sincronização com outras plataformas| BAIXA     |
+| RF-011 |Prioridade de tarefas | MÉDIA     |
 | RF-012 |Barra de pesquisa| MÉDIA     |
-| RF-013 |Diário pessoal| BAIXA     |
-| RF-014 |Planejamento de metas| BAIXA     |
-| RF-015 |Lista de tarefas| MÉDIA     |
+| RF-013 |Diário pessoal| MÉDIA     |
+| RF-014 |Planejamento de metas| ALTA     |
+| RF-015 |Lista de tarefas| ALTA     |
 
 
 
