@@ -83,3 +83,4 @@ Para a comunicação da equipe, usamos o WhatsApp e o Discord, que facilitaram o
 | Documentos do projeto               | GitHub                             |[docs](https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-organiz/tree/main/docs)|
 | Gerenciamento do projeto            | GitHub Projects                    |[Projects](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/53)|
 | Projeto de interface                | Figma                              |[Interface](https://www.figma.com/design/ySIDRrHpAX1edOHvrDIYEr/OrganiZ?node-id=0-1&t=wNr1G4KL92gozb10-1)|
+| Ambiente de hospedagem              | Onrender                           |[Hospedagem](https://two025-1-p1-tiaw-organiz.onrender.com/)|
