@@ -225,37 +225,93 @@ Essa funcionalidade permite que o usuário registre reflexões, ideias, sentimen
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info.
 
-##### Estrutura de dados - Contatos
+##### Estrutura de dados - Tarefas
 
-Contatos da aplicação
+Registro das tarefas criadas pelo usuário, associadas a uma pasta. Cada tarefa pode ter título, prioridade, status e data de vencimento, e serve como base para os indicadores de status exibidos na tela inicial.
 
 ```json
   {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
-  }
+  "id": "tarefa-001",
+  "titulo": "Reunião de projeto",
+  "descricao": "Reunião para discutir andamento das demandas",
+  "dataVencimento": "2025-07-09",
+  "prioridade": "Alta",                
+  "status": "Pendente",             
+  "pastaId": "1a2b3c4d",              
+  "createdAt": "2025-01-26T21:30:00.000Z",
+  "usuarioId": "eed55b91-45be-4f2c-81bc-7686135593f9"
+}
   
 ```
 
-##### Estrutura de dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de dados - Usuários  
 
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema.
+Registro dos usuários do sistema, contendo informações de identificação, contato e dados de login. Essas informações são utilizadas para login, exibição de perfil e edição de dados pessoais.
+
+```json
+ {
+  "id": "eed55b91-45be-4f2c-81bc-7686135593f9",
+  "nomeCompleto": "Yuri Alberto",
+  "email": "yuri1200@gmail.com",
+  "telefone": "(11) 99999-9999",
+  "dataNascimento": "2000-05-10",
+  "login": "yuri1200",
+  "senha": "senha123",
+  "criadoEm": "2025-01-20T12:00:00.000Z"
+}
+```
+
+##### Estrutura de dados - Pastas 
+
+Representa pastas criadas pelo usuário para organizar suas tarefas.
 
 ```json
   {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
+    "id": "pasta-exemplo-1",
+    "nome": "Trabalho",
+    "cor": "#6c757d",
+    "descricao": "Projeto trabalho",
+    "notas": [],
+    "imagens": [],
+    "tarefas": [],
+    "createdAt": "2025-06-27T22:27:03.515Z",
+    "usuarioId": "eed55b91-45be-4f2c-81bc-7686135593f9"
   }
 ```
+
+##### Estrutura de dados - Metas 
+
+Representa metas criadas pelo usuário, geralmente com um objetivo a ser atingido até uma data limite. Cada meta possui categoria, descrição e ícone.
+
+```json
+  {
+    "id": "meta-1",
+    "categoria": "Organização",
+    "descricao": "Usar o OrganiZ todos os dias para melhorar produtividade",
+    "icone": "🎯",
+    "concluida": false,
+    "createdAt": "2025-01-26T21:30:00.000Z",
+    "usuarioId": "eed55b91-45be-4f2c-81bc-7686135593f9"
+ }
+```
+
+##### Estrutura de dados - Diário
+
+Representa pastas criadas pelo usuário para organizar suas tarefas e entradas no diário.
+
+```json
+  {
+    "id": "entrada-001",
+    "titulo": "Reflexões do dia",
+    "conteudo": "Hoje tive um dia bem produtivo. Consegui organizar todas as tarefas pendentes e me senti realizado.",
+    "humor": "Motivado",
+    "categoria": "Pessoal",
+    "createdAt": "2025-06-29T21:00:00.000Z",
+    "pastaId": "trabalho",
+    "usuarioId": "eed55b91-45be-4f2c-81bc-7686135593f9"
+  }
+```
+
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
