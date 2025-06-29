@@ -2,9 +2,32 @@
 
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Esta seção descreve a estrutura da aplicação, incluindo os principais componentes e como eles interagem entre si, desde o navegador do usuário até o backend da aplicação.
+  - Página Web com HTML, CSS e JavaScript.
+  - Realiza requisições HTTP para o backend (JSON Server).
 
-![Arquitetura da solução](images/exemplo-arquitetura.png)
+**Componentes da Solução**
+- Navegador (Cliente):
+  - Tela de cadastro e login de usuários.
+  - Organização em pastas e metas.
+  - Indicadores visuais de tarefas: concluídas, pendentes, atrasadas.
+  - Calendário mensal para visualização de tarefas.
+  - Criação e filtro de pastas.
+  - Design responsivo.
+
+- Servidor de Backend (JSON Server):
+  - Responsável por fornecer os dados armazenados no arquivo db.json.
+  - Permite persistência dos dados cadastrados no front-end.
+  - Exposição de endpoints RESTful como:
+      - GET /usuarios, POST /tarefas, PUT /pastas/:id, DELETE /metas/:id.
+
+- Hospedagem:
+  - Backend (JSON Server) hospedado no serviço OnRender, permitindo acesso online aos dados.
+  - Frontend desenvolvido e testado localmente.
+
+  
+
+
 
 ## Funcionalidades
 
