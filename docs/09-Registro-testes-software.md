@@ -15,8 +15,8 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-002 – Realizar login** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Requisito associado |![image](https://github.com/user-attachments/assets/8564dcc2-b115-4fb2-9f5a-b6e54877c781) |
+| Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/login.html |
 
 
 > **Links úteis**:
