@@ -18,11 +18,15 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | Requisito associado |![image](https://github.com/user-attachments/assets/8564dcc2-b115-4fb2-9f5a-b6e54877c781) |
 | Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/login.html |
 
-| **Caso de teste** 	| **CT-002 – Criação de pasta** 	|
+| **Caso de teste** 	| **CT-003 – Criação de pasta** 	|
 |:---:	|:---:	|
 | Requisito associado |![image](https://github.com/user-attachments/assets/4c9c8438-b3e8-407b-ae24-232ee083d175)|
 | Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/criar-pasta.html |
 
+| **Caso de teste** 	| **CT-004 – Criação de tarefa** 	|
+|:---:	|:---:	|
+| Requisito associado |![image](https://github.com/user-attachments/assets/4883c8b1-eda0-40fe-8f18-38eb7bb2f8f9)|
+| Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/criar-tarefa.html |
 
 
 ## Vídeo 
