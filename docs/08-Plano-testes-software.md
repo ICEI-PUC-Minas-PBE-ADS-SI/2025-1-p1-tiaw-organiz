@@ -44,7 +44,7 @@ Por exemplo:
 | Critério de êxito | - Tarefa criada com sucesso. |
 | Responsável pela elaboração do caso de teste |Paulo Henrique Vaz Coelho |
 
-| **Caso de teste**  | **CT-004 – Criação de metas**  |
+| **Caso de teste**  | **CT-005 – Criação de metas**  |
 |:---: |:---: |
 | Requisito associado |RF-00X - Verificar se o usuário consegue criar uma nova meta com sucesso. |
 | Objetivo do teste | O usuário conseguir criar uma meta. |
