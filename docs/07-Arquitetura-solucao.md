@@ -176,8 +176,50 @@ Essa funcionalidade permite que o usuário visualize e edite seus dados pessoais
   * Clique em "Cancelar" se desejar descartar as modificações.
     
 * **Tela da funcionalidade**:
-* 
+  
 ![image](https://github.com/user-attachments/assets/8c226532-06fd-4dc1-a3d4-4edafe656eec)
+
+
+##### Funcionalidade 9 - Barra de pesquisa de pastas
+
+Essa funcionalidade permite que o usuário localize rapidamente pastas específicas por meio da barra de pesquisa, digitando palavras-chave relacionadas ao nome ou descrição da pasta.
+
+
+* **Estrutura de dados:** [Pastas](#estrutura-de-dados---Pastas)
+  
+* **Instruções de acesso:**
+  * Faça login no sistema;
+  * Acesse a tela inicial do sistema;
+  * Localize a seção "Pesquisar Pastas" no menu lateral esquerdo;
+  * Digite um termo no campo de busca (por exemplo: trabalho);
+  * Os resultados relacionados aparecerão automaticamente abaixo do campo;
+  * Clique na pasta desejada para acessá-la diretamente.
+    
+* **Tela da funcionalidade**:
+  
+![image](https://github.com/user-attachments/assets/a46b004b-2120-44f6-867a-a1245082b8d5)
+
+
+##### Funcionalidade 10 - Diário
+
+Essa funcionalidade permite que o usuário registre reflexões, ideias, sentimentos ou acontecimentos do dia a dia por meio da criação de pastas.
+
+* **Estrutura de dados:** [Diário](#estrutura-de-dados---Diário)
+  
+* **Instruções de acesso:**
+  * Faça login no sistema;
+  * Acesse uma pasta (ex: "Trabalho");
+  * Clique no botão “Escrever no Diário”;
+  * Um modal será aberto com o formulário para preenchimento;
+  * Preencha os campos;
+  * Clique em “Salvar Entrada” para registrar;
+  * Clique em “Cancelar” para descartar.
+
+    
+* **Tela da funcionalidade**:
+
+![image](https://github.com/user-attachments/assets/74773632-41e0-4148-8059-46769b99286a)
+
 
 ### Estruturas de dados
 
