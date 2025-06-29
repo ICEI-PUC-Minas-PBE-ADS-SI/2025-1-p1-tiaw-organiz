@@ -26,7 +26,13 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-004 – Criação de tarefa** 	|
 |:---:	|:---:	|
 | Requisito associado |![image](https://github.com/user-attachments/assets/4883c8b1-eda0-40fe-8f18-38eb7bb2f8f9)|
-| Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/criar-tarefa.html |
+| Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/criar-tarefa.html |~
+
+| **Caso de teste** 	| **CT-005 – Criação de meta** 	|
+|:---:	|:---:	|
+| Requisito associado |![image](https://github.com/user-attachments/assets/2bafa9a3-0d54-4e8a-a141-52ac9145b5e0)|
+| Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/metas.html |
+
 
 
 ## Vídeo 
