@@ -9,9 +9,7 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 | Requisito associado | ![image](https://github.com/user-attachments/assets/8b2525d3-6fb3-42d8-b53a-698f41b1d595)|
-| Requisito associado | ![image](https://github.com/user-attachments/assets/e5f1af95-bfef-4998-b067-87a5a0038dae)|
-| Requisito associado | ![image](https://github.com/user-attachments/assets/0262bdda-7f4c-4f38-aae0-7e0359ce9b9c)|
-| Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/perfil.html|
+| Registro de evidência | https://two025-1-p1-tiaw-organiz.onrender.com/registro.html|
 
 
 
