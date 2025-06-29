@@ -116,10 +116,68 @@ Exibe um calendário com as tarefas cadastradas em suas respectivas datas. O usu
   * Vá até a tela inicial;
   * O calendário é exibido na parte inferior da tela;
   * Se existir alguma tarefa cadastrada, o calendário mostrará o nome da tarefa e o nível de prioridade dela.
+
     
 * **Tela da funcionalidade**:
   
 ![image](https://github.com/user-attachments/assets/c5f3df0a-9742-4253-9a81-8e66da2aeea1)
+
+
+##### Funcionalidade 6 - Lista de tarefas
+
+Exibe todas as tarefas cadastradas pelo usuário, organizadas por status (pendentes ou concluídas), com indicadores visuais de prioridade e data. Também permite concluir ou excluir tarefas diretamente na interface.
+
+
+* **Estrutura de dados:** [Tarefas](#estrutura-de-dados---Tarefas)
+  
+* **Instruções de acesso:**
+  * Faça login no sistema;
+  * Vá até a tela inicial;
+  * A seção "Lista de Tarefas" será exibida ao lado direito da tela;
+  * As tarefas são divididas em pendentes e concluídas;
+  * O usuário pode marcar/desmarcar tarefas como concluídas, excluir uma tarefa clicando no ícone da lixeira e Visualizar o título, descrição, data e prioridade de cada item.
+    
+* **Tela da funcionalidade**:
+  
+![image](https://github.com/user-attachments/assets/0ca278c9-a824-49fb-a1a7-35c94c68d4bd)
+
+
+##### Funcionalidade 7 - Indicadores de status
+
+Essa funcionalidade exibe três cards de resumo no topo da aplicação, com contadores visuais que indicam a quantidade de tarefas:
+
+
+* **Estrutura de dados:** [Tarefas](#estrutura-de-dados---Tarefas)
+  
+* **Instruções de acesso:**
+  * Faça login no sistema;
+  * Vá até a tela inicial;
+  * Os indicadores são exibidos automaticamente no topo da tela inicial.;
+  * Adicione ou modifique tarefas para que os contadores sejam atualizados em tempo real.
+    
+* **Tela da funcionalidade**:
+  
+![image](https://github.com/user-attachments/assets/c93f4571-ca2c-4bb7-9795-72446c15b51c)
+
+
+##### Funcionalidade 8 - Edição de perfil
+
+Essa funcionalidade permite que o usuário visualize e edite seus dados pessoais e também atualize a senha diretamente pela interface da aplicação.
+
+
+* **Estrutura de dados:** [Usuários](#estrutura-de-dados---Usuários)
+  
+* **Instruções de acesso:**
+  * Faça login no sistema;
+  * Acesse o ícone de perfil;
+  * Clique na opção “Editar Perfil”;
+  * Altere os campos desejados;
+  * Clique em "Salvar Alterações" para confirmar as mudanças;
+  * Clique em "Cancelar" se desejar descartar as modificações.
+    
+* **Tela da funcionalidade**:
+* 
+![image](https://github.com/user-attachments/assets/8c226532-06fd-4dc1-a3d4-4edafe656eec)
 
 ### Estruturas de dados
 
