@@ -28,4 +28,13 @@ Por exemplo:
 | Critério de êxito | - O login foi realizado com sucesso. |
 | Responsável pela elaboração do caso de teste |Paulo Henrique Vaz Coelho |
 
+| **Caso de teste**  | **CT-003 – Criação de pasta**  |
+|:---: |:---: |
+| Requisito associado |RF-00X - A aplicação deve permitir a criação de pastas para organização de tarefas. |
+| Objetivo do teste | O usuário conseguir criar uma pasta. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://two025-1-p1-tiaw-organiz.onrender.com/index.html --Localizar a opção de "Criar Pasta" na interface <br> - Clicar em "Criar Pasta" <br> -- Preencher o nome da nova pasta <br> - Confirmar a criação clicando no botão correspondente | |
+| Critério de êxito | - Pasta criada com sucesso. |
+| Responsável pela elaboração do caso de teste |Paulo Henrique Vaz Coelho |
+
+
 
