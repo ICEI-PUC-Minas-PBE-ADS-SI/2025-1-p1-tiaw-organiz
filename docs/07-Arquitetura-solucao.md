@@ -312,26 +312,6 @@ Representa pastas criadas pelo usuário para organizar suas tarefas e entradas n
 ```
 
 
-### Módulos e APIs
-
-Esta seção apresenta os módulos e APIs utilizados na solução.
-
-**Images**:
-
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
-
-**Fonts:**
-
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
-
-**Scripts:**
-
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-
-
-
 ## Hospedagem
 
 A aplicação foi hospedada na plataforma Render, um serviço de cloud que oferece infraestrutura gratuita e escalável para aplicações web, APIs e bancos de dados. A escolha do Render se deu pela sua praticidade, integração com GitHub e plano gratuito ideal para projetos acadêmicos
