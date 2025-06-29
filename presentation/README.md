@@ -23,4 +23,4 @@
 
 ## Vídeo
 
-![video OrganiZ](https://youtu.be/Ngib5fqSBgc)
+https://youtu.be/Ngib5fqSBgc
