@@ -3,8 +3,7 @@
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
 
 Esta seção descreve a estrutura da aplicação, incluindo os principais componentes e como eles interagem entre si, desde o navegador do usuário até o backend da aplicação.
-  - Página Web com HTML, CSS e JavaScript.
-  - Realiza requisições HTTP para o backend (JSON Server).
+A interface é uma página web desenvolvida com HTML, CSS e JavaScript. Ela realiza requisições HTTP para um backend simulado com JSON Server, trocando dados em formato JSON.
 
 **Componentes da Solução**
 - Navegador (Cliente):
@@ -330,17 +329,11 @@ Esta seção apresenta os módulos e APIs utilizados na solução.
 * jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
 * Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+
 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
+A aplicação foi hospedada na plataforma Render, um serviço de cloud que oferece infraestrutura gratuita e escalável para aplicações web, APIs e bancos de dados. A escolha do Render se deu pela sua praticidade, integração com GitHub e plano gratuito ideal para projetos acadêmicos
 
-> **Links úteis**:
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando seu site no Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+  - [Ambiente de hospedagem](https://two025-1-p1-tiaw-organiz.onrender.com/)
