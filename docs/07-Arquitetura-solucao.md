@@ -38,7 +38,7 @@ Permite a inclusão de novos usuários.
 
 * **Estrutura de dados:** [Usuários](#estrutura-de-dados---usuários)
 * **Instruções de acesso:**
-  * Acesse o site e vá até a página de login.;
+  * Acesse o site e vá até a página de login;
   * Se ainda não possuir conta, clique em "Cadastrar-se";
   * Preencha os dados obrigatórios no formulário de cadastro de usuário;
   * Após o cadastro, o usuário deve realizar o login manualmente.
@@ -47,11 +47,21 @@ Permite a inclusão de novos usuários.
 ![image](https://github.com/user-attachments/assets/688d11ba-c126-4b82-a2cc-aea45e7c828c)
 
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários, quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) títulos e descrição da funcionalidade; (2) estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+##### Funcionalidade 2 - Criação de tarefas
+
+Permite que o usuário crie novas tarefas, vinculando-as a uma pasta ou data específica.
+
+* **Estrutura de dados:** [Tarefas](#estrutura-de-dados---Tarefas)
+* **Instruções de acesso:**
+  * Faça login no sistema;
+  * Na tela inicial, Clique no botão “Criar Tarefa” ou ícone de "+";
+  * Preencha os campos obrigatórios;
+  * Clique em “Criar tarefa” para registrar a tarefa.
+* **Tela da funcionalidade**:
+
+![image](https://github.com/user-attachments/assets/e2e50bfa-54f5-4e82-a9f7-7d3c1cf7e6f4)
+
+
 
 ### Estruturas de dados
 
