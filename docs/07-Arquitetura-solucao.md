@@ -31,20 +31,21 @@ Esta seção descreve a estrutura da aplicação, incluindo os principais compon
 
 ## Funcionalidades
 
-Esta seção apresenta as funcionalidades da solução.
 
-##### Funcionalidade 1 - Cadastro de contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Cadastro de usuário
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite a inclusão de novos usuários.
 
-* **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
+* **Estrutura de dados:** [Usuários](#estrutura-de-dados---usuários)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login;
-  * Acesse o menu principal e escolha a opção "Cadastros";
-  * Em seguida, escolha a opção "Contatos".
+  * Acesse o site e vá até a página de login.;
+  * Se ainda não possuir conta, clique em "Cadastrar-se";
+  * Preencha os dados obrigatórios no formulário de cadastro de usuário;
+  * Após o cadastro, o usuário deve realizar o login manualmente.
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](images/exemplo-funcionalidade.png)
+![image](https://github.com/user-attachments/assets/688d11ba-c126-4b82-a2cc-aea45e7c828c)
+
 
 > ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
